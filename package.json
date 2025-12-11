@@ -12,6 +12,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "apexcharts": "^5.3.6",
     "astro": "^5.16.5"
   }
 }

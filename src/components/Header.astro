@@ -26,7 +26,7 @@
     position: sticky;
     top: 0;
     z-index: 50;
-    background: rgba(10, 10, 10, 0.8);
+    background: rgba(6, 8, 13, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--color-border);
@@ -89,15 +89,19 @@
     align-items: center;
     gap: var(--space-2);
     color: var(--color-text-secondary);
-    font-size: 0.875rem;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
     font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
     padding: var(--space-2) var(--space-3);
-    border-radius: var(--radius-md);
+    border: 1px solid transparent;
     transition: all var(--transition-fast);
   }
 
   .nav-link:hover {
-    color: var(--color-text);
+    color: var(--color-primary);
+    border-color: var(--color-border);
     background: var(--color-bg-elevated);
   }
 
