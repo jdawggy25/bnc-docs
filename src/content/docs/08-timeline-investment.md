@@ -100,12 +100,10 @@ Ongoing monthly work:
 
 ### Initial Build
 
-| Phase | Investment | Due |
-|-------|------------|-----|
-| Website Build (Start) | $5,000 | Project kickoff |
-| Website Completion | $5,000 | Week 4 (at launch) |
-| CRM Build (Start) | $7,500 | Week 7 |
-| CRM Completion | $7,500 | Week 12 (at launch) |
+| Component | Total | Payment Structure |
+|-----------|-------|-------------------|
+| Website Build | $10,000 | 50% deposit, 50% at launch |
+| CRM Build | $15,000 | 50% deposit, 50% at launch |
 | **Total Initial Build** | **$25,000** | |
 
 ### Monthly Retainer — Fixed Services
@@ -209,15 +207,22 @@ Industry standard for professional ad management ranges from 10-20% of spend. Ou
 
 **Backlink Acquisition (5-10 links/month):**
 
-| Link Type | Est. Value | Description |
-|-----------|------------|-------------|
-| Local Citations | $50-100/ea | Yelp, BBB, Houzz, Angi, HomeAdvisor |
-| Industry Directories | $75-150/ea | Contractor associations, trade directories |
-| Guest Posts | $200-400/ea | Home improvement blogs, local publications |
-| HARO/Connectively | $300-500/ea | Expert quotes in journalist articles |
-| Resource Links | $150-300/ea | "Best contractors" lists, resource pages |
+| Link Type | Description |
+|-----------|-------------|
+| Local Citations | Yelp, BBB, Houzz, Angi, HomeAdvisor |
+| Industry Directories | Contractor associations, trade directories |
+| Guest Posts | Home improvement blogs, local publications |
+| HARO/Connectively | Expert quotes in journalist articles |
+| Resource Links | "Best contractors" lists, resource pages |
 
-*Industry average for quality link acquisition: $200-500 per link. Monthly link building value: $1,000-5,000.*
+**What's Included:**
+- Prospect research and outreach
+- Relationship building with publishers
+- Content creation for placements
+- Submission and follow-up
+- Full tracking and reporting in monthly reports
+
+*Note: We handle all outreach and acquisition work. We do not purchase backlinks—all links are earned through legitimate outreach. Results are documented in your monthly SEO report.*
 
 **Google Business Profile Management:**
 - Weekly post updates (4/month)
