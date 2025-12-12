@@ -1,117 +1,177 @@
 {
   "client": {
-    "name": "Acme Corporation",
-    "reportDate": "December 2025",
-    "website": "acmecorp.com"
+    "name": "BNC Builders Inc.",
+    "reportDate": "December 2024",
+    "website": "bncbuildersinc.com"
   },
   "overview": {
-    "performanceScore": 92,
-    "seoScore": 84,
-    "accessibilityScore": 89,
-    "bestPracticesScore": 96
+    "performanceScore": 65,
+    "seoScore": 72,
+    "accessibilityScore": 78,
+    "bestPracticesScore": 80
   },
   "keywords": {
-    "total": 247,
-    "change": 38,
-    "changePercent": "+18%",
-    "topPositions": 52,
-    "avgPosition": 8.3,
+    "total": 153,
+    "change": 12,
+    "changePercent": "+8.5%",
+    "topPositions": 20,
+    "avgPosition": 24.3,
     "ranking": [
-      { "keyword": "enterprise software solutions", "position": 3, "change": 2, "volume": 12400 },
-      { "keyword": "cloud management platform", "position": 5, "change": -1, "volume": 8900 },
-      { "keyword": "business automation tools", "position": 7, "change": 4, "volume": 6200 },
-      { "keyword": "SaaS project management", "position": 4, "change": 0, "volume": 15800 },
-      { "keyword": "team collaboration software", "position": 9, "change": 3, "volume": 22100 }
-    ]
+      { "keyword": "bnc builders", "position": 1, "change": 0, "volume": 90 },
+      { "keyword": "kitchen remodel escondido ca", "position": 4, "change": 0, "volume": 50 },
+      { "keyword": "contractors in oceanside ca", "position": 7, "change": 0, "volume": 90 },
+      { "keyword": "carlsbad bathroom remodel", "position": 8, "change": 0, "volume": 70 },
+      { "keyword": "kitchen remodel poway", "position": 9, "change": 0, "volume": 140 },
+      { "keyword": "bathroom remodeling escondido", "position": 7, "change": 2, "volume": 50 },
+      { "keyword": "deck repair san diego", "position": 12, "change": -1, "volume": 110 },
+      { "keyword": "home remodeling carlsbad", "position": 11, "change": 0, "volume": 110 }
+    ],
+    "byPosition": {
+      "top3": 3,
+      "top10": 17,
+      "top20": 28,
+      "top50": 65,
+      "top100": 153
+    }
   },
   "traffic": {
-    "monthly": 48750,
-    "change": 8420,
-    "changePercent": "+21%",
-    "trend": [24300, 28100, 31500, 35200, 38900, 43100, 48750],
+    "monthly": 117,
+    "change": 1,
+    "changePercent": "+0.9%",
+    "trend": [85, 92, 98, 105, 110, 115, 117],
+    "monthLabels": ["Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     "sources": {
-      "organic": 62,
-      "direct": 18,
-      "referral": 12,
-      "social": 8
+      "organic": 61,
+      "direct": 27,
+      "referral": 8,
+      "social": 4
     },
     "topPages": [
-      { "page": "/products/enterprise", "views": 12400, "change": "+15%" },
-      { "page": "/solutions/automation", "views": 8900, "change": "+28%" },
-      { "page": "/pricing", "views": 7200, "change": "+12%" },
-      { "page": "/blog/industry-trends", "views": 5600, "change": "+45%" }
+      { "page": "Homepage", "views": 45, "change": "+5%" },
+      { "page": "Kitchen Remodeling", "views": 18, "change": "+12%" },
+      { "page": "Deck Repair", "views": 12, "change": "+8%" },
+      { "page": "Oceanside Landing", "views": 10, "change": "+15%" }
     ]
   },
   "backlinks": {
-    "total": 1247,
-    "change": 156,
-    "changePercent": "+14%",
-    "domainAuthority": 58,
-    "referringDomains": 342,
+    "total": 368,
+    "change": 15,
+    "changePercent": "+4.2%",
+    "domainAuthority": 20,
+    "referringDomains": 177,
+    "trend": [320, 335, 342, 350, 358, 365, 368],
     "newLinks": [
-      { "domain": "techcrunch.com", "da": 94, "type": "dofollow" },
-      { "domain": "forbes.com", "da": 95, "type": "dofollow" },
-      { "domain": "venturebeat.com", "da": 91, "type": "dofollow" }
-    ]
+      { "domain": "bbb.org", "da": 79, "type": "dofollow" },
+      { "domain": "trustindex.io", "da": 51, "type": "dofollow" },
+      { "domain": "expertise.com", "da": 36, "type": "dofollow" },
+      { "domain": "yellowpages.com", "da": 60, "type": "nofollow" },
+      { "domain": "pinterest.com", "da": 100, "type": "dofollow" }
+    ],
+    "byType": {
+      "dofollow": 245,
+      "nofollow": 123
+    }
   },
   "issues": {
-    "total": 12,
-    "critical": 2,
-    "warnings": 5,
-    "notices": 5,
+    "total": 8,
+    "critical": 1,
+    "warnings": 4,
+    "notices": 3,
     "details": [
-      { "type": "critical", "issue": "Missing meta descriptions on 3 pages", "pages": 3 },
-      { "type": "critical", "issue": "Broken internal links detected", "pages": 2 },
-      { "type": "warning", "issue": "Images missing alt text", "pages": 8 },
-      { "type": "warning", "issue": "Duplicate title tags", "pages": 4 },
-      { "type": "warning", "issue": "Low word count pages", "pages": 6 }
+      { "type": "critical", "issue": "Platform lock-in (Scorpion)", "pages": 200 },
+      { "type": "warning", "issue": "Missing FAQ schema on service pages", "pages": 15 },
+      { "type": "warning", "issue": "Thin content on some location pages", "pages": 8 },
+      { "type": "warning", "issue": "Core Web Vitals need improvement", "pages": 200 },
+      { "type": "notice", "issue": "Internal linking opportunities", "pages": 50 }
     ]
   },
   "coreWebVitals": {
     "lcp": {
-      "value": 1.8,
+      "value": 3.2,
       "unit": "s",
-      "status": "pass",
-      "threshold": 2.5
+      "status": "needs-improvement",
+      "threshold": 2.5,
+      "target": 1.8
     },
     "fid": {
-      "value": 45,
+      "value": 85,
       "unit": "ms",
       "status": "pass",
-      "threshold": 100
+      "threshold": 100,
+      "target": 50
     },
     "cls": {
-      "value": 0.08,
+      "value": 0.15,
       "unit": "",
-      "status": "pass",
-      "threshold": 0.1
+      "status": "needs-improvement",
+      "threshold": 0.1,
+      "target": 0.05
     },
     "fcp": {
-      "value": 1.2,
+      "value": 2.1,
       "unit": "s",
-      "status": "pass",
-      "threshold": 1.8
+      "status": "needs-improvement",
+      "threshold": 1.8,
+      "target": 1.0
     },
     "ttfb": {
-      "value": 0.42,
+      "value": 0.95,
       "unit": "s",
-      "status": "pass",
-      "threshold": 0.8
+      "status": "needs-improvement",
+      "threshold": 0.8,
+      "target": 0.4
     }
   },
   "competitors": {
-    "avgPosition": 12.4,
+    "avgPosition": 18.5,
     "comparison": [
-      { "name": "Competitor A", "visibility": 78, "keywords": 312 },
-      { "name": "Competitor B", "visibility": 65, "keywords": 287 },
-      { "name": "Competitor C", "visibility": 52, "keywords": 198 }
+      { "name": "Remodel Works", "visibility": 85, "keywords": 450, "traffic": 2400 },
+      { "name": "Lars Remodeling", "visibility": 72, "keywords": 380, "traffic": 1800 },
+      { "name": "Marrokal Design", "visibility": 68, "keywords": 320, "traffic": 1500 },
+      { "name": "BNC Builders", "visibility": 31, "keywords": 153, "traffic": 117 }
     ]
   },
   "conversions": {
-    "total": 892,
-    "change": 124,
-    "changePercent": "+16%",
-    "rate": 1.83,
-    "trend": [620, 685, 720, 758, 812, 856, 892]
-  }
+    "total": 15,
+    "change": 2,
+    "changePercent": "+15%",
+    "rate": 4.2,
+    "trend": [8, 9, 10, 11, 12, 14, 15]
+  },
+  "investment": {
+    "initialBuild": 20000,
+    "monthlyRetainer": 5000,
+    "adSpend": 10300,
+    "breakdown": {
+      "website": 10000,
+      "crm": 10000
+    },
+    "monthlyBreakdown": {
+      "seo": 2000,
+      "ads": 2000,
+      "social": 500,
+      "reporting": 500
+    }
+  },
+  "projections": {
+    "traffic": {
+      "labels": ["Current", "Month 3", "Month 6", "Month 12"],
+      "values": [117, 250, 500, 850]
+    },
+    "leads": {
+      "labels": ["Current", "Month 3", "Month 6", "Month 12"],
+      "values": [5, 25, 50, 80]
+    },
+    "revenue": {
+      "labels": ["Current", "Month 3", "Month 6", "Month 12"],
+      "values": [175000, 875000, 1750000, 2800000]
+    }
+  },
+  "serviceBreakdown": [
+    { "name": "Kitchen", "keywords": 35, "traffic": 28 },
+    { "name": "Bathroom", "keywords": 32, "traffic": 25 },
+    { "name": "General", "keywords": 49, "traffic": 34 },
+    { "name": "Deck/Exterior", "keywords": 22, "traffic": 18 },
+    { "name": "ADU", "keywords": 15, "traffic": 12 }
+  ]
 }

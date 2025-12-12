@@ -1,216 +1,476 @@
 ---
 import metricsData from '../data/seo-metrics.json';
 
-const { traffic, keywords, coreWebVitals, overview } = metricsData;
+const { traffic, keywords, coreWebVitals, overview, backlinks, competitors, projections, serviceBreakdown, investment } = metricsData;
 ---
 
 <div class="charts-section">
-  <!-- Performance Overview -->
-  <div class="chart-grid">
-    <div class="chart-card">
+  <!-- Performance Scores Row -->
+  <div class="chart-row first-row">
+    <div class="chart-card score-card-container">
       <div class="chart-header">
         <span class="label-mono">Performance Score</span>
       </div>
-      <div id="performance-gauge" class="chart-container" data-value={overview.performanceScore}></div>
+      <div id="perf-gauge" class="gauge-container" data-value={overview.performanceScore}></div>
     </div>
-
-    <div class="chart-card">
+    <div class="chart-card score-card-container">
       <div class="chart-header">
         <span class="label-mono">SEO Score</span>
       </div>
-      <div id="seo-gauge" class="chart-container" data-value={overview.seoScore}></div>
+      <div id="seo-gauge" class="gauge-container" data-value={overview.seoScore}></div>
     </div>
-
-    <div class="chart-card span-2">
+    <div class="chart-card large">
       <div class="chart-header">
         <span class="label-mono">Traffic Trend</span>
-        <span class="chart-value">{traffic.monthly.toLocaleString()}<span class="chart-unit"> visits/mo</span></span>
+        <span class="chart-value">{traffic.monthly}<span class="chart-unit"> visits/mo</span></span>
       </div>
-      <div id="traffic-chart" class="chart-container chart-tall" data-trend={JSON.stringify(traffic.trend)}></div>
+      <div id="traffic-chart" class="chart-container"
+        data-trend={JSON.stringify(traffic.trend)}
+        data-labels={JSON.stringify(traffic.monthLabels)}></div>
     </div>
   </div>
 
   <!-- Core Web Vitals -->
-  <div class="vitals-section">
-    <div class="section-header">
-      <span class="label-mono-accent">Core Web Vitals</span>
-    </div>
-    <div class="vitals-grid">
-      {Object.entries(coreWebVitals).map(([key, vital]) => (
-        <div class="vital-card" data-status={vital.status}>
-          <div class="vital-header">
-            <span class="vital-name">{key.toUpperCase()}</span>
-            <span class={`vital-status ${vital.status}`}>{vital.status}</span>
-          </div>
-          <div class="vital-value">
-            {vital.value}<span class="vital-unit">{vital.unit}</span>
-          </div>
-          <div class="vital-bar">
-            <div
-              class="vital-progress"
-              style={`width: ${Math.min((vital.value / vital.threshold) * 100, 100)}%`}
-              data-status={vital.status}
-            ></div>
-          </div>
-          <div class="vital-threshold">
-            Threshold: {vital.threshold}{vital.unit}
+  <div class="section-header">
+    <span class="label-mono-accent">Core Web Vitals</span>
+  </div>
+  <div class="vitals-grid">
+    {Object.entries(coreWebVitals).map(([key, vital]) => (
+      <div class="vital-card" data-status={vital.status}>
+        <div class="vital-header">
+          <span class="vital-name">{key.toUpperCase()}</span>
+          <span class={`vital-status ${vital.status === 'pass' ? 'pass' : 'warn'}`}>
+            {vital.status === 'pass' ? 'PASS' : 'NEEDS-IMPROVEMENT'}
+          </span>
+        </div>
+        <div class="vital-values">
+          <div class="vital-current">
+            <span class="vital-number">{vital.value}<span class="vital-unit">{vital.unit}</span></span>
           </div>
         </div>
-      ))}
+        <div class="vital-bar">
+          <div
+            class="vital-progress"
+            style={`width: ${Math.min((vital.value / vital.threshold) * 100, 100)}%`}
+            data-status={vital.status}
+          ></div>
+        </div>
+        <div class="vital-threshold">
+          Threshold: {vital.threshold}{vital.unit}
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Traffic & Backlinks Row -->
+  <div class="chart-row">
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="label-mono">Traffic Sources</span>
+      </div>
+      <div id="sources-chart" class="chart-container" data-sources={JSON.stringify(traffic.sources)}></div>
     </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="label-mono">Backlink Growth</span>
+        <span class="chart-value">{backlinks.total}<span class="chart-unit"> links</span></span>
+      </div>
+      <div id="backlinks-chart" class="chart-container"
+        data-trend={JSON.stringify(backlinks.trend)}
+        data-labels={JSON.stringify(traffic.monthLabels)}></div>
+    </div>
+  </div>
+
+  <!-- Keyword Rankings Distribution -->
+  <div class="chart-row">
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="label-mono">Keyword Position Distribution</span>
+        <span class="chart-value">{keywords.total}<span class="chart-unit"> total</span></span>
+      </div>
+      <div id="keywords-chart" class="chart-container" data-positions={JSON.stringify(keywords.byPosition)}></div>
+    </div>
+    <div class="chart-card">
+      <div class="chart-header">
+        <span class="label-mono">Keywords by Service</span>
+      </div>
+      <div id="service-keywords-chart" class="chart-container" data-services={JSON.stringify(serviceBreakdown)}></div>
+    </div>
+  </div>
+
+  <!-- Competitor Analysis -->
+  <div class="section-header">
+    <span class="label-mono-accent">Competitive Analysis</span>
+  </div>
+  <div class="chart-row single">
+    <div class="chart-card full">
+      <div class="chart-header">
+        <span class="label-mono">Market Visibility Comparison</span>
+      </div>
+      <div id="competitor-chart" class="chart-container tall" data-competitors={JSON.stringify(competitors.comparison)}></div>
+    </div>
+  </div>
+
+  <!-- Projections -->
+  <div class="section-header">
+    <span class="label-mono-accent">Growth Projections</span>
+    <span class="section-subtitle">Expected Results Over 12 Months</span>
+  </div>
+  <div class="chart-row single">
+    <div class="chart-card full">
+      <div class="chart-header">
+        <span class="label-mono">Traffic Growth</span>
+        <span class="chart-value projection">+627%</span>
+      </div>
+      <div id="proj-traffic-chart" class="chart-container" data-projection={JSON.stringify(projections.traffic)}></div>
+    </div>
+  </div>
+
+  <!-- Top Keywords Table -->
+  <div class="section-header">
+    <span class="label-mono-accent">Top Ranking Keywords</span>
+  </div>
+  <div class="keywords-table">
+    <div class="table-header">
+      <span>Keyword</span>
+      <span>Position</span>
+      <span>Volume</span>
+      <span>Change</span>
+    </div>
+    {keywords.ranking.map((kw) => (
+      <div class="table-row">
+        <span class="keyword-text">{kw.keyword}</span>
+        <span class={`position ${kw.position <= 3 ? 'top3' : kw.position <= 10 ? 'top10' : ''}`}>
+          #{kw.position}
+        </span>
+        <span class="volume">{kw.volume}/mo</span>
+        <span class={`change ${kw.change > 0 ? 'up' : kw.change < 0 ? 'down' : ''}`}>
+          {kw.change > 0 ? '↑' : kw.change < 0 ? '↓' : '–'} {Math.abs(kw.change)}
+        </span>
+      </div>
+    ))}
+  </div>
+
+  <!-- Top Backlinks Table -->
+  <div class="section-header">
+    <span class="label-mono-accent">Top Quality Backlinks</span>
+  </div>
+  <div class="backlinks-table">
+    <div class="table-header">
+      <span>Domain</span>
+      <span>Authority</span>
+      <span>Type</span>
+    </div>
+    {backlinks.newLinks.map((link) => (
+      <div class="table-row">
+        <span class="domain-text">{link.domain}</span>
+        <span class="da-score">
+          <span class="da-badge" style={`--da-color: ${link.da >= 70 ? '#22c55e' : link.da >= 40 ? '#3b82f6' : '#a1a1aa'}`}>
+            {link.da}
+          </span>
+        </span>
+        <span class={`link-type ${link.type}`}>{link.type}</span>
+      </div>
+    ))}
   </div>
 </div>
 
 <script>
   import ApexCharts from 'apexcharts';
 
-  const chartColors = {
-    primary: '#3b82f6',
-    primaryLight: '#60a5fa',
-    bgElevated: '#12151e',
+  // Get current theme
+  const getTheme = () => document.documentElement.getAttribute('data-theme') || 'dark';
+
+  const getColors = () => {
+    const isDark = getTheme() === 'dark';
+    return {
+      primary: '#3b82f6',
+      primaryLight: '#60a5fa',
+      primaryDark: '#2563eb',
+      success: '#22c55e',
+      warning: '#f59e0b',
+      error: '#ef4444',
+      gray: '#6b7280',
+      bgElevated: isDark ? '#12151e' : '#e2e8f0',
+      bgCard: isDark ? '#0f1219' : '#f1f5f9',
+      text: isDark ? '#f4f4f5' : '#0f172a',
+      textMuted: isDark ? '#71717a' : '#64748b'
+    };
   };
 
-  // Performance Gauge
-  const perfEl = document.querySelector('#performance-gauge');
-  if (perfEl) {
-    const perfValue = parseInt(perfEl.getAttribute('data-value') || '0');
-    new ApexCharts(perfEl, {
-      series: [perfValue],
-      chart: {
-        type: 'radialBar',
-        height: 200,
-        sparkline: { enabled: true },
-        background: 'transparent'
-      },
-      plotOptions: {
-        radialBar: {
-          startAngle: -135,
-          endAngle: 135,
-          hollow: { size: '65%', background: 'transparent' },
-          track: { background: chartColors.bgElevated, strokeWidth: '100%' },
-          dataLabels: {
-            name: { show: false },
-            value: {
-              fontSize: '2rem',
-              fontFamily: 'JetBrains Mono, monospace',
-              fontWeight: 600,
-              color: chartColors.primary,
-              offsetY: 10,
-              formatter: (val: number) => String(val)
-            }
+  let colors = getColors();
+
+  const baseChartConfig = {
+    chart: {
+      background: 'transparent',
+      toolbar: { show: false },
+      animations: { enabled: true, easing: 'easeinout', speed: 800 }
+    },
+    tooltip: {
+      theme: getTheme(),
+      style: { fontFamily: 'Inter, sans-serif', fontSize: '12px' }
+    },
+    grid: {
+      borderColor: 'rgba(59, 130, 246, 0.1)',
+      strokeDashArray: 4
+    }
+  };
+
+  // Performance Gauges
+  const gaugeConfig = (value: number) => ({
+    series: [value],
+    chart: { type: 'radialBar', height: 180, sparkline: { enabled: true }, background: 'transparent' },
+    plotOptions: {
+      radialBar: {
+        startAngle: -135,
+        endAngle: 135,
+        hollow: { size: '60%', background: 'transparent' },
+        track: { background: colors.bgElevated, strokeWidth: '100%' },
+        dataLabels: {
+          name: { show: false },
+          value: {
+            fontSize: '2rem',
+            fontFamily: 'JetBrains Mono, monospace',
+            fontWeight: 600,
+            color: value >= 90 ? colors.success : value >= 70 ? colors.primary : colors.warning,
+            offsetY: 8,
+            formatter: (val: number) => String(val)
           }
         }
-      },
-      fill: {
-        type: 'gradient',
-        gradient: {
-          shade: 'dark',
-          type: 'horizontal',
-          gradientToColors: [chartColors.primaryLight],
-          stops: [0, 100]
-        }
-      },
-      stroke: { lineCap: 'round' },
-      colors: [chartColors.primary]
-    }).render();
-  }
+      }
+    },
+    fill: {
+      type: 'gradient',
+      gradient: {
+        shade: 'dark',
+        type: 'horizontal',
+        gradientToColors: [value >= 90 ? colors.success : value >= 70 ? colors.primaryLight : colors.warning],
+        stops: [0, 100]
+      }
+    },
+    stroke: { lineCap: 'round' },
+    colors: [value >= 90 ? colors.success : value >= 70 ? colors.primary : colors.warning]
+  });
 
-  // SEO Gauge
-  const seoEl = document.querySelector('#seo-gauge');
-  if (seoEl) {
-    const seoValue = parseInt(seoEl.getAttribute('data-value') || '0');
-    new ApexCharts(seoEl, {
-      series: [seoValue],
-      chart: {
-        type: 'radialBar',
-        height: 200,
-        sparkline: { enabled: true },
-        background: 'transparent'
-      },
-      plotOptions: {
-        radialBar: {
-          startAngle: -135,
-          endAngle: 135,
-          hollow: { size: '65%', background: 'transparent' },
-          track: { background: chartColors.bgElevated, strokeWidth: '100%' },
-          dataLabels: {
-            name: { show: false },
-            value: {
-              fontSize: '2rem',
-              fontFamily: 'JetBrains Mono, monospace',
-              fontWeight: 600,
-              color: chartColors.primary,
-              offsetY: 10,
-              formatter: (val: number) => String(val)
-            }
-          }
-        }
-      },
-      fill: {
-        type: 'gradient',
-        gradient: {
-          shade: 'dark',
-          type: 'horizontal',
-          gradientToColors: [chartColors.primaryLight],
-          stops: [0, 100]
-        }
-      },
-      stroke: { lineCap: 'round' },
-      colors: [chartColors.primary]
-    }).render();
-  }
+  // Render gauges
+  ['perf', 'seo'].forEach(id => {
+    const el = document.querySelector(`#${id}-gauge`);
+    if (el) {
+      const value = parseInt(el.getAttribute('data-value') || '0');
+      new ApexCharts(el, gaugeConfig(value)).render();
+    }
+  });
 
-  // Traffic Trend
+  // Traffic Trend Chart
   const trafficEl = document.querySelector('#traffic-chart');
   if (trafficEl) {
-    const trendData = JSON.parse(trafficEl.getAttribute('data-trend') || '[]');
+    const trend = JSON.parse(trafficEl.getAttribute('data-trend') || '[]');
+    const labels = JSON.parse(trafficEl.getAttribute('data-labels') || '[]');
     new ApexCharts(trafficEl, {
-      series: [{ name: 'Monthly Traffic', data: trendData }],
-      chart: {
-        type: 'area',
-        height: 160,
-        sparkline: { enabled: true },
-        background: 'transparent',
-        animations: { enabled: true, easing: 'easeinout', speed: 800 }
+      ...baseChartConfig,
+      series: [{ name: 'Organic Traffic', data: trend }],
+      chart: { ...baseChartConfig.chart, type: 'area', height: 180 },
+      xaxis: {
+        categories: labels,
+        labels: {
+          style: { colors: colors.textMuted, fontFamily: 'JetBrains Mono', fontSize: '11px' }
+        },
+        axisBorder: { show: false },
+        axisTicks: { show: false }
       },
-      stroke: { curve: 'smooth', width: 2, colors: [chartColors.primary] },
+      yaxis: { labels: { style: { colors: colors.textMuted, fontFamily: 'JetBrains Mono' } } },
+      stroke: { curve: 'smooth', width: 3, colors: [colors.primary] },
       fill: {
         type: 'gradient',
-        gradient: {
-          shadeIntensity: 1,
-          opacityFrom: 0.4,
-          opacityTo: 0.05,
-          stops: [0, 100]
+        gradient: { shadeIntensity: 1, opacityFrom: 0.5, opacityTo: 0.1, stops: [0, 100] }
+      },
+      colors: [colors.primary],
+      markers: { size: 4, colors: [colors.primary], strokeWidth: 0 }
+    }).render();
+  }
+
+  // Traffic Sources Donut
+  const sourcesEl = document.querySelector('#sources-chart');
+  if (sourcesEl) {
+    const sources = JSON.parse(sourcesEl.getAttribute('data-sources') || '{}');
+    new ApexCharts(sourcesEl, {
+      series: Object.values(sources),
+      chart: { type: 'donut', height: 200, background: 'transparent' },
+      labels: ['Organic', 'Direct', 'Referral', 'Social'],
+      colors: [colors.primary, colors.primaryLight, colors.success, colors.warning],
+      legend: { position: 'bottom', labels: { colors: colors.textMuted }, fontFamily: 'Inter' },
+      plotOptions: {
+        pie: {
+          donut: {
+            size: '65%',
+            labels: {
+              show: true,
+              total: {
+                show: true,
+                label: 'Organic',
+                color: colors.textMuted,
+                formatter: () => '61%'
+              }
+            }
+          }
         }
       },
-      tooltip: {
-        enabled: true,
-        theme: 'dark',
-        style: { fontFamily: 'Inter, sans-serif' },
-        y: { formatter: (val: number) => val.toLocaleString() + ' visits' }
+      dataLabels: { enabled: false }
+    }).render();
+  }
+
+  // Keywords Position Chart
+  const keywordsEl = document.querySelector('#keywords-chart');
+  if (keywordsEl) {
+    const positions = JSON.parse(keywordsEl.getAttribute('data-positions') || '{}');
+    new ApexCharts(keywordsEl, {
+      ...baseChartConfig,
+      series: [{ name: 'Keywords', data: Object.values(positions) }],
+      chart: { ...baseChartConfig.chart, type: 'bar', height: 200 },
+      plotOptions: { bar: { borderRadius: 4, horizontal: true, barHeight: '60%' } },
+      xaxis: {
+        categories: ['Top 3', 'Top 10', 'Top 20', 'Top 50', 'Top 100'],
+        labels: { style: { colors: colors.textMuted, fontFamily: 'JetBrains Mono' } }
       },
-      colors: [chartColors.primary]
+      yaxis: { labels: { style: { colors: colors.textMuted, fontFamily: 'JetBrains Mono' } } },
+      colors: [colors.primary],
+      dataLabels: { enabled: true, style: { fontFamily: 'JetBrains Mono', fontSize: '11px' } }
+    }).render();
+  }
+
+  // Backlinks Growth Chart
+  const backlinksEl = document.querySelector('#backlinks-chart');
+  if (backlinksEl) {
+    const trend = JSON.parse(backlinksEl.getAttribute('data-trend') || '[]');
+    const labels = JSON.parse(backlinksEl.getAttribute('data-labels') || '[]');
+    new ApexCharts(backlinksEl, {
+      ...baseChartConfig,
+      series: [{ name: 'Backlinks', data: trend }],
+      chart: { ...baseChartConfig.chart, type: 'line', height: 200 },
+      xaxis: { categories: labels, labels: { style: { colors: colors.textMuted, fontFamily: 'JetBrains Mono' } } },
+      yaxis: { labels: { style: { colors: colors.textMuted, fontFamily: 'JetBrains Mono' } } },
+      stroke: { curve: 'smooth', width: 3 },
+      colors: [colors.success],
+      markers: { size: 5, colors: [colors.success], strokeWidth: 0 }
+    }).render();
+  }
+
+  // Competitor Chart
+  const competitorEl = document.querySelector('#competitor-chart');
+  if (competitorEl) {
+    const data = JSON.parse(competitorEl.getAttribute('data-competitors') || '[]');
+    new ApexCharts(competitorEl, {
+      ...baseChartConfig,
+      series: [
+        { name: 'Visibility', data: data.map((d: any) => d.visibility) },
+        { name: 'Keywords', data: data.map((d: any) => Math.round(d.keywords / 10)) }
+      ],
+      chart: { ...baseChartConfig.chart, type: 'bar', height: 280 },
+      plotOptions: { bar: { borderRadius: 4, columnWidth: '50%' } },
+      xaxis: {
+        categories: data.map((d: any) => d.name),
+        labels: { style: { colors: colors.textMuted, fontFamily: 'JetBrains Mono', fontSize: '11px' } }
+      },
+      yaxis: { labels: { style: { colors: colors.textMuted, fontFamily: 'JetBrains Mono' } } },
+      colors: [colors.primary, colors.primaryLight],
+      legend: { position: 'top', labels: { colors: colors.textMuted }, fontFamily: 'Inter' },
+      dataLabels: { enabled: false }
+    }).render();
+  }
+
+  // Projection Charts
+  const renderProjectionChart = (elId: string, color: string, formatter?: (val: number) => string) => {
+    const el = document.querySelector(elId);
+    if (el) {
+      const data = JSON.parse(el.getAttribute('data-projection') || '{}');
+      new ApexCharts(el, {
+        ...baseChartConfig,
+        series: [{ name: 'Projected', data: data.values }],
+        chart: { ...baseChartConfig.chart, type: 'bar', height: 180 },
+        plotOptions: { bar: { borderRadius: 4, columnWidth: '60%' } },
+        xaxis: {
+          categories: data.labels,
+          labels: { style: { colors: colors.textMuted, fontFamily: 'JetBrains Mono', fontSize: '10px' } }
+        },
+        yaxis: {
+          labels: {
+            style: { colors: colors.textMuted, fontFamily: 'JetBrains Mono' },
+            formatter: formatter || ((val: number) => val.toLocaleString())
+          }
+        },
+        colors: [color],
+        dataLabels: {
+          enabled: true,
+          style: { fontFamily: 'JetBrains Mono', fontSize: '10px' },
+          formatter: formatter || ((val: number) => val.toLocaleString())
+        }
+      }).render();
+    }
+  };
+
+  renderProjectionChart('#proj-traffic-chart', colors.primary);
+
+  // Service Breakdown Chart
+  const serviceKeywordsEl = document.querySelector('#service-keywords-chart');
+  if (serviceKeywordsEl) {
+    const data = JSON.parse(serviceKeywordsEl.getAttribute('data-services') || '[]');
+    new ApexCharts(serviceKeywordsEl, {
+      series: data.map((d: any) => d.keywords),
+      chart: { type: 'pie', height: 200, background: 'transparent' },
+      labels: data.map((d: any) => d.name),
+      colors: [colors.primary, colors.primaryLight, colors.success, colors.warning, '#8b5cf6'],
+      legend: { position: 'bottom', labels: { colors: colors.textMuted }, fontFamily: 'Inter', fontSize: '11px' },
+      dataLabels: { enabled: true, style: { fontFamily: 'JetBrains Mono', fontSize: '11px' } }
     }).render();
   }
 </script>
 
 <style>
   .charts-section {
-    margin-bottom: var(--space-10);
-  }
-
-  .chart-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
-    background: var(--color-border);
-    border: 1px solid var(--color-border);
     margin-bottom: var(--space-8);
   }
 
+  .section-header {
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-3);
+    margin-bottom: var(--space-4);
+    margin-top: var(--space-8);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .section-header:first-child {
+    margin-top: 0;
+  }
+
+  .section-subtitle {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+  }
+
+  /* Chart Rows */
+  .chart-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--color-border);
+    border: 1px solid var(--color-border);
+    margin-bottom: var(--space-6);
+  }
+
   @media (min-width: 768px) {
-    .chart-grid {
-      grid-template-columns: repeat(4, 1fr);
+    .chart-row {
+      grid-template-columns: 1fr 1fr;
+    }
+    .chart-row.first-row {
+      grid-template-columns: 1fr 1fr 2fr;
+    }
+    .chart-row.triple {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .chart-row.single {
+      grid-template-columns: 1fr;
     }
   }
 
@@ -218,39 +478,28 @@ const { traffic, keywords, coreWebVitals, overview } = metricsData;
     background: var(--color-bg-deep);
     padding: var(--space-5);
     transition: all var(--transition-base);
-    opacity: 0;
-    animation: slideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
-
-  .chart-card:nth-child(1) { animation-delay: 100ms; }
-  .chart-card:nth-child(2) { animation-delay: 180ms; }
-  .chart-card:nth-child(3) { animation-delay: 260ms; }
 
   .chart-card:hover {
     background: var(--color-bg);
-    transform: translateY(-2px);
   }
 
-  .chart-card.span-2 {
-    grid-column: span 2;
+  .chart-card.full {
+    grid-column: 1 / -1;
   }
 
-  @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .score-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .chart-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--space-3);
+    margin-bottom: var(--space-4);
   }
 
   .chart-value {
@@ -258,6 +507,10 @@ const { traffic, keywords, coreWebVitals, overview } = metricsData;
     font-size: 1.25rem;
     font-weight: 600;
     color: var(--color-primary);
+  }
+
+  .chart-value.projection {
+    color: #22c55e;
   }
 
   .chart-unit {
@@ -268,58 +521,44 @@ const { traffic, keywords, coreWebVitals, overview } = metricsData;
 
   .chart-container {
     min-height: 180px;
+  }
+
+  .chart-container.tall {
+    min-height: 280px;
+  }
+
+  .gauge-container {
+    min-height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .chart-tall {
-    min-height: 140px;
-  }
-
-  /* Vitals Section */
-  .vitals-section {
-    margin-top: var(--space-8);
-  }
-
-  .section-header {
-    margin-bottom: var(--space-4);
-    padding-bottom: var(--space-2);
-    border-bottom: 1px solid var(--color-border);
-  }
-
+  /* Vitals Grid */
   .vitals-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 1px;
     background: var(--color-border);
     border: 1px solid var(--color-border);
+    margin-bottom: var(--space-8);
   }
 
   .vital-card {
     background: var(--color-bg-deep);
     padding: var(--space-4);
     transition: all var(--transition-base);
-    opacity: 0;
-    animation: slideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
-
-  .vital-card:nth-child(1) { animation-delay: 400ms; }
-  .vital-card:nth-child(2) { animation-delay: 480ms; }
-  .vital-card:nth-child(3) { animation-delay: 560ms; }
-  .vital-card:nth-child(4) { animation-delay: 640ms; }
-  .vital-card:nth-child(5) { animation-delay: 720ms; }
 
   .vital-card:hover {
     background: var(--color-bg);
-    transform: translateY(-2px);
   }
 
   .vital-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: var(--space-2);
+    margin-bottom: var(--space-3);
   }
 
   .vital-name {
@@ -332,73 +571,60 @@ const { traffic, keywords, coreWebVitals, overview } = metricsData;
 
   .vital-status {
     font-family: var(--font-mono);
-    font-size: 0.625rem;
-    font-weight: 500;
+    font-size: 0.5625rem;
+    font-weight: 600;
     text-transform: uppercase;
-    padding: 0.125rem 0.375rem;
+    padding: 0.125rem 0.5rem;
     border-radius: var(--radius-sm);
   }
 
   .vital-status.pass {
-    color: var(--color-primary);
-    background: rgba(59, 130, 246, 0.1);
+    color: #22c55e;
+    background: rgba(34, 197, 94, 0.1);
   }
 
-  .vital-status.fail {
-    color: var(--color-error);
-    background: rgba(248, 113, 113, 0.1);
+  .vital-status.warn {
+    color: #f59e0b;
+    background: rgba(245, 158, 11, 0.1);
   }
 
-  .vital-value {
+  .vital-values {
+    margin-bottom: var(--space-3);
+  }
+
+  .vital-number {
     font-family: var(--font-mono);
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-text);
-    line-height: 1;
-    margin-bottom: var(--space-3);
-    transition: all var(--transition-base);
-  }
-
-  .vital-card:hover .vital-value {
-    color: var(--color-primary);
-    text-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
   }
 
   .vital-unit {
     font-size: 0.875rem;
     color: var(--color-text-muted);
-    font-weight: 400;
   }
 
   .vital-bar {
-    height: 4px;
+    height: 6px;
     background: var(--color-bg-elevated);
-    border-radius: 2px;
-    overflow: hidden;
+    border-radius: 3px;
+    overflow: visible;
     margin-bottom: var(--space-2);
+    position: relative;
   }
 
   .vital-progress {
     height: 100%;
-    border-radius: 2px;
-    animation: progressFill 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    animation-delay: 0.8s;
-  }
-
-  @keyframes progressFill {
-    from {
-      width: 0 !important;
-    }
+    border-radius: 3px;
+    transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .vital-progress[data-status="pass"] {
-    background: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary));
-    box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+    background: linear-gradient(90deg, #22c55e, #4ade80);
   }
 
-  .vital-progress[data-status="fail"] {
-    background: linear-gradient(90deg, #dc2626, var(--color-error));
-    box-shadow: 0 0 8px rgba(248, 113, 113, 0.3);
+  .vital-progress[data-status="needs-improvement"] {
+    background: linear-gradient(90deg, #f59e0b, #fbbf24);
   }
 
   .vital-threshold {
@@ -407,17 +633,128 @@ const { traffic, keywords, coreWebVitals, overview } = metricsData;
     color: var(--color-text-muted);
   }
 
+  /* Tables */
+  .keywords-table, .backlinks-table {
+    border: 1px solid var(--color-border);
+    margin-bottom: var(--space-8);
+  }
+
+  .table-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-4);
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-bg-secondary);
+    font-family: var(--font-mono);
+    font-size: 0.625rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+  }
+
+  .backlinks-table .table-header {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .table-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--space-4);
+    padding: var(--space-3) var(--space-4);
+    background: var(--color-bg-deep);
+    border-top: 1px solid var(--color-border);
+    font-size: 0.875rem;
+    transition: background var(--transition-fast);
+  }
+
+  .backlinks-table .table-row {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .table-row:hover {
+    background: var(--color-bg);
+  }
+
+  .keyword-text, .domain-text {
+    color: var(--color-text);
+    font-weight: 500;
+  }
+
+  .position {
+    font-family: var(--font-mono);
+    font-weight: 600;
+  }
+
+  .position.top3 {
+    color: #22c55e;
+  }
+
+  .position.top10 {
+    color: var(--color-primary);
+  }
+
+  .volume {
+    font-family: var(--font-mono);
+    color: var(--color-text-muted);
+    font-size: 0.8125rem;
+  }
+
+  .change {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+  }
+
+  .change.up {
+    color: #22c55e;
+  }
+
+  .change.down {
+    color: #ef4444;
+  }
+
+  .da-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 24px;
+    border-radius: var(--radius-sm);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: white;
+    background: var(--da-color);
+  }
+
+  .link-type {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+  }
+
+  .link-type.dofollow {
+    color: #22c55e;
+  }
+
+  .link-type.nofollow {
+    color: var(--color-text-muted);
+  }
+
   @media (max-width: 640px) {
-    .chart-grid {
-      grid-template-columns: 1fr;
+    .table-header, .table-row {
+      grid-template-columns: 1.5fr 0.75fr 0.75fr 0.75fr;
+      font-size: 0.75rem;
+      padding: var(--space-2) var(--space-3);
     }
 
-    .chart-card.span-2 {
-      grid-column: span 1;
+    .backlinks-table .table-header,
+    .backlinks-table .table-row {
+      grid-template-columns: 1.5fr 0.75fr 0.75fr;
     }
 
-    .vitals-grid {
-      grid-template-columns: repeat(2, 1fr);
+    .keyword-text, .domain-text {
+      font-size: 0.75rem;
     }
   }
 </style>

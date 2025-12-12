@@ -6,7 +6,7 @@ import Charts from '../components/Charts.astro';
 import metricsData from '../data/seo-metrics.json';
 
 const docs = await getCollection('docs');
-const { client, keywords, traffic, backlinks, issues } = metricsData;
+const { client, keywords, traffic, backlinks, issues, overview } = metricsData;
 
 // Sort docs alphabetically by slug
 const sortedDocs = docs.sort((a, b) => a.slug.localeCompare(b.slug));
@@ -20,61 +20,40 @@ function formatTitle(slug: string): string {
 }
 ---
 
-<BaseLayout title="SEO Reports">
+<BaseLayout title="BNC Builders Inc. - Marketing Proposal | Comcreate">
   <main class="main">
     <div class="container">
       <header class="hero">
         <div class="hero-content">
           <div class="brand-badge">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <path d="M12 16v-4"></path>
-              <path d="M12 8h.01"></path>
-            </svg>
-            Powered by Comcreate
+            <img src="/comcreate-logo.png" alt="Comcreate" class="badge-logo" />
+            <span class="badge-divider">|</span>
+            <span>Digital Marketing Proposal</span>
           </div>
-          <h1 class="page-title">SEO Reports</h1>
           <div class="hero-divider"></div>
+          <h1 class="page-title">BNC Builders Inc.</h1>
           <p class="page-tagline">
-            Data-driven insights. Actionable strategies. Real results.
+            Complete Digital Marketing Takeover
           </p>
           <p class="page-description">
-            Comprehensive SEO analysis and recommendations designed to ignite your digital growth.
+            Website migration, enterprise tracking, paid advertising, SEO strategy, and custom CRM build — everything you need to take control of your marketing.
           </p>
+          <div class="hero-meta">
+            <span class="meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              December 2024
+            </span>
+            <span class="meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              San Diego, CA
+            </span>
+            <span class="meta-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              (619) 955-0105
+            </span>
+          </div>
         </div>
       </header>
-
-      <!-- Stats Grid -->
-      <div class="stats-grid">
-        <div class="stat-card animate-fade-in">
-          <div class="stat-label">Keywords Tracked</div>
-          <div class="stat-value">{keywords.total}</div>
-          <div class={`stat-change ${keywords.change >= 0 ? 'positive' : 'negative'}`}>
-            {keywords.changePercent} from last month
-          </div>
-        </div>
-        <div class="stat-card animate-fade-in" style="animation-delay: 50ms">
-          <div class="stat-label">Monthly Traffic</div>
-          <div class="stat-value">{(traffic.monthly / 1000).toFixed(1)}k</div>
-          <div class={`stat-change ${traffic.change >= 0 ? 'positive' : 'negative'}`}>
-            {traffic.changePercent} from last month
-          </div>
-        </div>
-        <div class="stat-card animate-fade-in" style="animation-delay: 100ms">
-          <div class="stat-label">Backlinks</div>
-          <div class="stat-value">{backlinks.total}</div>
-          <div class={`stat-change ${backlinks.change >= 0 ? 'positive' : 'negative'}`}>
-            {backlinks.changePercent} from last month
-          </div>
-        </div>
-        <div class="stat-card animate-fade-in" style="animation-delay: 150ms">
-          <div class="stat-label">Issues Found</div>
-          <div class="stat-value">{issues.total}</div>
-          <div class="stat-change">
-            {issues.critical} critical · {issues.warnings} warnings
-          </div>
-        </div>
-      </div>
 
       <!-- Charts Section -->
       <Charts />
@@ -133,11 +112,11 @@ function formatTitle(slug: string): string {
     display: inline-flex;
     align-items: center;
     gap: var(--space-2);
-    padding: var(--space-2) var(--space-3);
+    padding: var(--space-2) var(--space-4);
     background: var(--color-bg-secondary);
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
-    margin-bottom: var(--space-8);
+    margin-bottom: var(--space-6);
     font-size: 0.8125rem;
     font-weight: 500;
     color: var(--color-text-secondary);
@@ -146,14 +125,44 @@ function formatTitle(slug: string): string {
     animation-delay: 0ms;
   }
 
-  .brand-badge svg {
+  .brand-badge .badge-logo {
+    height: 20px;
+    width: auto;
+  }
+
+  .brand-badge .badge-divider {
+    color: var(--color-border-hover);
+    margin: 0 var(--space-1);
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+    opacity: 0;
+    animation: slideUp 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    animation-delay: 500ms;
+  }
+
+  .meta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .meta-item svg {
     color: var(--color-primary);
-    flex-shrink: 0;
   }
 
   .page-title {
-    font-size: clamp(2.5rem, 6vw, 4rem);
-    margin-bottom: var(--space-6);
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: var(--space-4);
     color: var(--color-text);
     line-height: 1.1;
     opacity: 0;
@@ -167,7 +176,7 @@ function formatTitle(slug: string): string {
     background: var(--color-primary);
     margin-bottom: var(--space-6);
     animation: expandWidth 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
-    animation-delay: 200ms;
+    animation-delay: 100ms;
     width: 0;
     box-shadow: 0 0 15px rgba(59, 130, 246, 0.4);
   }
@@ -193,6 +202,10 @@ function formatTitle(slug: string): string {
   }
 
   @media (max-width: 640px) {
+    .page-title {
+      font-size: 1.75rem;
+    }
+
     .page-tagline {
       font-size: 1.125rem;
     }
