@@ -23,7 +23,7 @@ description: "Project timeline, pricing, and what's included"
 | Week | Activity | Deliverable |
 |------|----------|-------------|
 | 2 | Site architecture, design system | Figma mockups (if needed) |
-| 2-3 | Page development (all 200+ pages) | Staging site |
+| 2-3 | Page development (all pages) | Staging site |
 | 3 | Tracking implementation | GTM container |
 | 4 | QA, testing, optimization | Test report |
 | 4 | Launch preparation | Launch checklist |
@@ -103,10 +103,10 @@ Ongoing monthly work:
 | Phase | Investment | Due |
 |-------|------------|-----|
 | Website Build (Start) | $5,000 | Project kickoff |
-| CRM Build (Start) | $5,000 | Week 7 |
 | Website Completion | $5,000 | Week 4 (at launch) |
-| CRM Completion | $5,000 | Week 12 (at launch) |
-| **Total Initial Build** | **$20,000** | |
+| CRM Build (Start) | $7,500 | Week 7 |
+| CRM Completion | $7,500 | Week 12 (at launch) |
+| **Total Initial Build** | **$25,000** | |
 
 ### Monthly Retainer — Fixed Services
 
@@ -350,7 +350,7 @@ Industry standard for professional ad management ranges from 10-20% of spend. Ou
 
 **Core Deliverables:**
 - Full site architecture and planning
-- 200+ page carbon-copy migration
+- Full site carbon-copy migration
 - Enhanced schema markup (LocalBusiness, FAQ, Review)
 - Core Web Vitals optimization
 - Mobile-first responsive design
@@ -381,7 +381,7 @@ We'll recommend the best platform based on your needs. Here are the options:
 
 *All options include the same deliverables. Technology choice affects editing experience, not build cost.*
 
-### CRM Build ($10,000 total)
+### CRM Build ($15,000 total)
 
 - Custom CRM application
 - Lead management system
@@ -430,9 +430,9 @@ We'll recommend the best platform based on your needs. Here are the options:
 |-----------|--------|------|
 | Project Kickoff | $5,000 | Day 1 |
 | Website Launch | $5,000 | Week 4 |
-| CRM Sprint Start | $5,000 | Week 7 |
-| CRM Launch | $5,000 | Week 12 |
-| **Total Build Investment** | **$20,000** | |
+| CRM Sprint Start | $7,500 | Week 7 |
+| CRM Launch | $7,500 | Week 12 |
+| **Total Build Investment** | **$25,000** | |
 
 ### Ongoing Monthly Payments (Beginning Week 5)
 

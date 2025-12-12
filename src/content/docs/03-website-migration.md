@@ -22,7 +22,7 @@ Google treats major site changes carefully. To protect your rankings:
 Before touching anything, we capture everything:
 
 **Crawl Data Export:**
-- All 200+ URLs
+- All existing URLs
 - Title tags
 - Meta descriptions
 - H1, H2, H3 headers

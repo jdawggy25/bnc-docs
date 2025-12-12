@@ -9,7 +9,7 @@ description: "Deep dive into BNC Builders' current digital presence and SEO perf
 
 **Current Platform:** Scorpion (proprietary)
 **Domain:** bncbuildersinc.com
-**Total Pages:** 200+
+**Total Pages:** 30-50
 **Location:** Escondido, CA (serves San Diego County)
 
 ### Site Structure
