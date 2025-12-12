@@ -32,6 +32,7 @@ A complete digital marketing infrastructure rebuild that gives you:
 3. **Paid advertising** - Google Ads + Meta Ads done right
 4. **SEO growth** - Dominate San Diego County search results
 5. **Custom CRM** - Purpose-built for your sales process
+6. **CSR Software System** - Unified communication, automated follow-ups, full visibility
 
 ## Current Performance Snapshot
 

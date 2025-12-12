@@ -50,29 +50,44 @@ description: "Project timeline, pricing, and what's included"
 
 **End of Week 12: Full System Live**
 
-### Phase 5: Optimization (Week 13+)
+### Phase 5: CSR Software Implementation (Weeks 13-24)
+
+| Weeks | Activity | Deliverable |
+|-------|----------|-------------|
+| 13-14 | Discovery & software selection | Platform recommendation |
+| 15-16 | Setup & configuration | Configured system |
+| 17-18 | Automations & SOPs | Workflow automation suite |
+| 19-24 | Training & testing (30-60 days) | Trained team |
+| 24 | Full launch | CSR system live |
+
+**End of Week 24: CSR System Fully Operational**
+
+### Phase 6: Optimization (Week 25+)
 
 Ongoing monthly work:
 - SEO optimization and content
 - Ad campaign management
 - CRM enhancements
+- CSR system optimization
 - Reporting and strategy
 
 ## Visual Timeline
 
 ```
-Week:  1    2    3    4    5    6    7    8    9   10   11   12   13+
-       │    │    │    │    │    │    │    │    │    │    │    │    │
-       ├────┴────┴────┴────┤    │    │    │    │    │    │    │    │
-       │   WEBSITE BUILD   │    │    │    │    │    │    │    │    │
-       │                   ├────┴────┤    │    │    │    │    │    │
-       │                   │ADS SETUP│    │    │    │    │    │    │
-       │                   │         ├────┴────┴────┴────┴────┤    │
-       │                   │         │       CRM BUILD        │    │
-       │                   │         │                        ├────┴──→
-       │                   │         │                        │ONGOING
-       ▼                   ▼         ▼                        ▼
-    AUDIT              LAUNCH    ADS LIVE               CRM LIVE
+Week:  1    2    3    4    5    6    7    8    9   10   11   12   13  ...  24   25+
+       │    │    │    │    │    │    │    │    │    │    │    │    │        │    │
+       ├────┴────┴────┴────┤    │    │    │    │    │    │    │    │        │    │
+       │   WEBSITE BUILD   │    │    │    │    │    │    │    │    │        │    │
+       │                   ├────┴────┤    │    │    │    │    │    │        │    │
+       │                   │ADS SETUP│    │    │    │    │    │    │        │    │
+       │                   │         ├────┴────┴────┴────┴────┤    │        │    │
+       │                   │         │       CRM BUILD        │    │        │    │
+       │                   │         │                        ├────┴─ ─ ─ ──┤    │
+       │                   │         │                        │CSR SOFTWARE │    │
+       │                   │         │                        │             ├────┴──→
+       │                   │         │                        │             │ONGOING
+       ▼                   ▼         ▼                        ▼             ▼
+    AUDIT              LAUNCH    ADS LIVE               CRM LIVE      CSR LIVE
 ```
 
 ## Investment Summary
@@ -154,6 +169,18 @@ Week:  1    2    3    4    5    6    7    8    9   10   11   12   13+
 - User training
 - Full source code ownership
 - 30-day post-launch support
+
+### CSR Software Implementation (Included in Retainer)
+
+- Unified communication platform (text, email, calls in one place)
+- Office number texting capability
+- Automated follow-up sequences
+- Message templates library
+- Lead auto-import from all platforms (Google, Yelp, Meta, Angi, Scorpion)
+- CSR activity dashboards (calls, texts, emails, response time)
+- Standard Operating Procedures documentation
+- CSR team training
+- 30-60 day testing period
 
 ### Monthly Retainer ($5,000/mo)
 
