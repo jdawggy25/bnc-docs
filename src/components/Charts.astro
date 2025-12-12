@@ -459,7 +459,22 @@ const { traffic, keywords, coreWebVitals, overview, backlinks, competitors, proj
     margin-bottom: var(--space-6);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .chart-row {
+      grid-template-columns: 1fr 1fr;
+    }
+    .chart-row.first-row {
+      grid-template-columns: 1fr 1fr;
+    }
+    .chart-row.triple {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .chart-row.single {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (min-width: 1024px) {
     .chart-row {
       grid-template-columns: 1fr 1fr;
     }
@@ -755,6 +770,50 @@ const { traffic, keywords, coreWebVitals, overview, backlinks, competitors, proj
 
     .keyword-text, .domain-text {
       font-size: 0.75rem;
+    }
+
+    .chart-card {
+      padding: var(--space-4);
+    }
+
+    .chart-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-2);
+    }
+
+    .chart-value {
+      font-size: 1rem;
+    }
+
+    .vital-card {
+      padding: var(--space-3);
+    }
+
+    .vital-number {
+      font-size: 1.25rem;
+    }
+
+    .gauge-container {
+      min-height: 150px;
+    }
+
+    .chart-container {
+      min-height: 150px;
+    }
+
+    .section-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-1);
+    }
+  }
+
+  /* Touch-friendly tap targets */
+  @media (pointer: coarse) {
+    .table-row {
+      min-height: 48px;
+      align-items: center;
     }
   }
 </style>
