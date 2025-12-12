@@ -549,6 +549,17 @@ a:hover {
   max-width: 72ch;
   margin: 0 auto;
   color: var(--color-text-secondary);
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+@media (max-width: 640px) {
+  .prose {
+    max-width: 100%;
+  }
 }
 
 .prose > * {
