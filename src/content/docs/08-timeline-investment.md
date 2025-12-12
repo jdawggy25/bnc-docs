@@ -16,6 +16,8 @@ description: "Project timeline, pricing, and what's included"
 | 4-5 | SEO baseline documentation | Baseline report |
 | 5 | Kickoff call | Project plan |
 
+---
+
 ### Phase 2: Website Build (Weeks 2-4)
 
 | Week | Activity | Deliverable |
@@ -27,6 +29,8 @@ description: "Project timeline, pricing, and what's included"
 | 4 | Launch preparation | Launch checklist |
 
 **End of Week 4: Website Launch**
+
+---
 
 ### Phase 3: Ads Setup (Weeks 5-6)
 
@@ -40,6 +44,8 @@ description: "Project timeline, pricing, and what's included"
 
 **End of Week 6: Ads Running**
 
+---
+
 ### Phase 4: CRM Build (Weeks 7-12)
 
 | Weeks | Sprint | Deliverable |
@@ -50,45 +56,45 @@ description: "Project timeline, pricing, and what's included"
 
 **End of Week 12: Full System Live**
 
-### Phase 5: CSR Software Implementation (Weeks 13-24)
+---
+
+### Phase 5: CSR Software (Weeks 13-24)
 
 | Weeks | Activity | Deliverable |
 |-------|----------|-------------|
-| 13-14 | Discovery & software selection | Platform recommendation |
+| 13-14 | Discovery & selection | Platform recommendation |
 | 15-16 | Setup & configuration | Configured system |
-| 17-18 | Automations & SOPs | Workflow automation suite |
-| 19-24 | Training & testing (30-60 days) | Trained team |
+| 17-18 | Automations & SOPs | Workflow automation |
+| 19-24 | Training & testing | Trained team |
 | 24 | Full launch | CSR system live |
 
-**End of Week 24: CSR System Fully Operational**
+**End of Week 24: CSR System Operational**
+
+---
 
 ### Phase 6: Optimization (Week 25+)
 
 Ongoing monthly work:
 - SEO optimization and content
 - Ad campaign management
-- CRM enhancements
+- CRM development & enhancements
 - CSR system optimization
 - Reporting and strategy
 
-## Visual Timeline
+---
 
-```
-Week:  1    2    3    4    5    6    7    8    9   10   11   12   13  ...  24   25+
-       │    │    │    │    │    │    │    │    │    │    │    │    │        │    │
-       ├────┴────┴────┴────┤    │    │    │    │    │    │    │    │        │    │
-       │   WEBSITE BUILD   │    │    │    │    │    │    │    │    │        │    │
-       │                   ├────┴────┤    │    │    │    │    │    │        │    │
-       │                   │ADS SETUP│    │    │    │    │    │    │        │    │
-       │                   │         ├────┴────┴────┴────┴────┤    │        │    │
-       │                   │         │       CRM BUILD        │    │        │    │
-       │                   │         │                        ├────┴─ ─ ─ ──┤    │
-       │                   │         │                        │CSR SOFTWARE │    │
-       │                   │         │                        │             ├────┴──→
-       │                   │         │                        │             │ONGOING
-       ▼                   ▼         ▼                        ▼             ▼
-    AUDIT              LAUNCH    ADS LIVE               CRM LIVE      CSR LIVE
-```
+## Timeline Overview
+
+| Phase | Weeks | Milestone |
+|-------|-------|-----------|
+| Discovery & Audit | 1 | Baseline established |
+| Website Build | 2-4 | Site launches |
+| Ads Setup | 5-6 | Campaigns live |
+| CRM Build | 7-12 | CRM launches |
+| CSR Software | 13-24 | CSR system live |
+| Optimization | 25+ | Ongoing growth |
+
+---
 
 ## Investment Summary
 
@@ -106,14 +112,12 @@ Week:  1    2    3    4    5    6    7    8    9   10   11   12   13  ...  24   
 
 | Service | Monthly |
 |---------|---------|
-| SEO Management | Included |
+| SEO & Content | Included |
 | Google Ads Management | Included |
 | Meta Ads Management | Included |
-| Content Creation (4 pieces) | Included |
-| Social Media Management | Included |
-| CRM Maintenance | Included |
-| Monthly Reporting | Included |
-| Strategy Calls | Included |
+| CRM Development | Included |
+| Social Media | Included |
+| Reporting & Strategy | Included |
 | **Monthly Retainer** | **$5,000/mo** |
 
 *Retainer begins after website launch (Week 5)*
@@ -136,7 +140,207 @@ Week:  1    2    3    4    5    6    7    8    9   10   11   12   13  ...  24   
 | Ad Spend | $10,300 |
 | **Total** | **$15,300/mo** |
 
-## What's Included
+---
+
+## What's Included in the Retainer
+
+### SEO & Content Creation
+
+**Monthly New Pages (2-4 pages/month):**
+- Service area pages targeting new locations
+- Blog posts targeting long-tail keywords
+- Project showcase pages with optimized content
+- FAQ pages answering common customer questions
+
+**On-Page SEO:**
+- Title tag and meta description optimization
+- Header structure (H1, H2, H3) improvements
+- Internal linking strategy
+- Image alt text and compression
+- Schema markup updates
+- Core Web Vitals monitoring
+
+**Technical SEO:**
+- Monthly site crawls for errors
+- Broken link identification and fixes
+- Sitemap updates
+- Robots.txt optimization
+- Page speed monitoring
+- Mobile usability checks
+- Index coverage monitoring
+
+**Keyword Strategy:**
+- Monthly keyword research
+- Competitor keyword gap analysis
+- Search intent mapping
+- Ranking position tracking
+- Opportunity identification
+
+---
+
+### Link Building & Authority
+
+**Backlink Acquisition (5-10 links/month):**
+
+| Link Type | Description |
+|-----------|-------------|
+| Local Citations | Yelp, BBB, Houzz, Angi, HomeAdvisor, local directories |
+| Industry Directories | Contractor-specific directories and associations |
+| Guest Posts | Articles on home improvement and local blogs |
+| HARO/Connectively | Expert quotes in journalist articles |
+| Resource Links | Getting listed on "best contractors" lists |
+| Supplier Links | Backlinks from material suppliers and partners |
+
+**Link Building Process:**
+1. Prospect identification (relevant, high-authority sites)
+2. Outreach and relationship building
+3. Content creation for placements
+4. Link monitoring and maintenance
+5. Toxic link disavowal (if needed)
+
+**Authority Building:**
+- Google Business Profile optimization
+- Review generation strategy
+- Local press mentions
+- Industry award submissions
+- Community involvement features
+
+---
+
+### Local SEO
+
+**Google Business Profile Management:**
+- Weekly post updates
+- Photo uploads (projects, team)
+- Q&A monitoring and responses
+- Review response (within 24 hours)
+- Category optimization
+- Service area updates
+- Attribute management
+
+**Local Citations:**
+- NAP (Name, Address, Phone) consistency audit
+- Citation building on 50+ directories
+- Duplicate listing cleanup
+- Industry-specific directory submissions
+
+**Review Strategy:**
+- Automated review request sequences
+- Review response templates
+- Negative review management
+- Review velocity monitoring
+
+---
+
+### CRM Development & Maintenance
+
+**Ongoing Development (8-12 hours/month):**
+
+| Category | Examples |
+|----------|----------|
+| New Features | Custom reports, new automations, workflow improvements |
+| Enhancements | UI improvements, speed optimization, mobile updates |
+| Integrations | New tool connections, API updates, data syncs |
+| Bug Fixes | Issue resolution, edge case handling |
+
+**Monthly CRM Work Includes:**
+- Feature requests and prioritization
+- Sprint planning for enhancements
+- Testing and quality assurance
+- User feedback implementation
+- Performance monitoring
+- Security updates
+- Database optimization
+- Backup verification
+
+**Examples of Monthly Enhancements:**
+- New dashboard widgets
+- Custom report builders
+- Additional automation triggers
+- Improved mobile experience
+- New notification options
+- Enhanced lead scoring rules
+- Additional pipeline stages
+- Team performance tracking
+
+---
+
+### Paid Advertising Management
+
+**Google Ads:**
+- Campaign structure optimization
+- Keyword bid management (daily)
+- Negative keyword additions
+- Ad copy A/B testing
+- Landing page recommendations
+- Quality Score improvement
+- Budget pacing and allocation
+- Conversion tracking verification
+- Search term analysis
+- Competitor monitoring
+
+**Meta Ads (Facebook/Instagram):**
+- Audience testing and refinement
+- Creative development and testing
+- Placement optimization
+- Retargeting campaign management
+- Lookalike audience building
+- Budget optimization
+- Conversion API maintenance
+- Creative refresh (monthly)
+
+**Reporting:**
+- Weekly performance snapshots
+- Monthly deep-dive reports
+- Conversion attribution analysis
+- Cost per lead tracking
+- ROI calculations
+
+---
+
+### Social Media Management
+
+**Content Calendar:**
+- 12-16 posts per month
+- Mix of project showcases, tips, team content
+- Platform-specific formatting
+
+**Platforms Managed:**
+- Facebook
+- Instagram
+- (LinkedIn optional)
+
+**Activities:**
+- Post scheduling and publishing
+- Comment monitoring and response
+- Message monitoring
+- Hashtag strategy
+- Story content (2-3/week)
+- Community engagement
+
+---
+
+### Reporting & Strategy
+
+**Monthly Deliverables:**
+
+| Report | Contents |
+|--------|----------|
+| SEO Report | Rankings, traffic, backlinks, technical health |
+| Ads Report | Spend, leads, cost per lead, conversion rates |
+| CRM Report | Lead volume, pipeline value, close rates |
+| Social Report | Engagement, reach, follower growth |
+
+**Strategy Sessions:**
+- Monthly 30-minute strategy call
+- Quarterly 60-minute business review
+- Performance analysis and recommendations
+- Goal setting and tracking
+- Competitive landscape updates
+
+---
+
+## What's Included in the Build
 
 ### Website Build ($10,000 total)
 
@@ -166,58 +370,24 @@ Week:  1    2    3    4    5    6    7    8    9   10   11   12   13  ...  24   
 - Google Ads offline conversion sync
 - Meta offline conversion sync
 - Reporting dashboard
+- Mobile-optimized interface
 - User training
 - Full source code ownership
 - 30-day post-launch support
 
-### CSR Software Implementation (Included in Retainer)
+### CSR Software (Included in Retainer)
 
-- Unified communication platform (text, email, calls in one place)
+- Unified communication platform
 - Office number texting capability
 - Automated follow-up sequences
 - Message templates library
-- Lead auto-import from all platforms (Google, Yelp, Meta, Angi, Scorpion)
-- CSR activity dashboards (calls, texts, emails, response time)
-- Standard Operating Procedures documentation
+- Lead auto-import from all platforms
+- CSR activity dashboards
+- Standard Operating Procedures
 - CSR team training
 - 30-60 day testing period
 
-### Monthly Retainer ($5,000/mo)
-
-**SEO:**
-- Technical SEO monitoring
-- Keyword tracking and optimization
-- Content creation (4 pieces/month)
-- Link building
-- Local SEO (GBP management)
-- Monthly SEO reporting
-
-**Paid Advertising:**
-- Google Ads management
-- Meta Ads management
-- Campaign optimization
-- Bid management
-- Ad creative updates
-- A/B testing
-- Monthly ads reporting
-
-**Social Media:**
-- Content calendar
-- Post scheduling
-- Engagement monitoring
-- Monthly social reporting
-
-**CRM:**
-- Bug fixes
-- Minor enhancements
-- Integration maintenance
-- User support
-
-**Strategy:**
-- Monthly strategy call
-- Quarterly business review
-- Performance analysis
-- Growth recommendations
+---
 
 ## What's NOT Included
 
@@ -227,6 +397,8 @@ Week:  1    2    3    4    5    6    7    8    9   10   11   12   13  ...  24   
 - Third-party software subscriptions (CallRail, etc.)
 - Domain registration/renewal
 - Legal/compliance consulting
+
+---
 
 ## Payment Schedule
 
@@ -239,6 +411,8 @@ Week:  1    2    3    4    5    6    7    8    9   10   11   12   13  ...  24   
 | Monthly Retainer | $5,000 | 1st of each month |
 
 *We accept ACH, wire transfer, or credit card (3% fee for card).*
+
+---
 
 ## What You Get
 
@@ -274,6 +448,8 @@ Week:  1    2    3    4    5    6    7    8    9   10   11   12   13  ...  24   
 - SEO rankings
 - Ad performance
 
+---
+
 ## Expected Results
 
 ### Conservative Projections
@@ -293,26 +469,19 @@ Week:  1    2    3    4    5    6    7    8    9   10   11   12   13  ...  24   
 - Monthly leads (Month 6): 150
 
 **Monthly Revenue Potential:**
-```
-150 leads × 20% close rate = 30 projects
-30 projects × $35,000 = $1,050,000/month
-```
+- 150 leads x 20% close rate = 30 projects
+- 30 projects x $35,000 = $1,050,000/month
 
 **Monthly Investment:**
-```
-Retainer: $5,000
-Ad Spend: $10,300
-Total: $15,300
-```
+- Retainer: $5,000
+- Ad Spend: $10,300
+- Total: $15,300
 
-**ROI:**
-```
-Revenue: $1,050,000
-Investment: $15,300
-ROI: 68:1
-```
+**ROI: 68:1**
 
 *These are illustrative projections. Actual results depend on many factors including market conditions, competition, and sales execution.*
+
+---
 
 ## Next Steps
 
@@ -321,6 +490,8 @@ ROI: 68:1
 3. **Sign agreement** - Simple contract, no hidden terms
 4. **Kickoff** - We begin Week 1 activities
 5. **Launch** - Your new digital presence goes live
+
+---
 
 ## Questions?
 
