@@ -5,55 +5,135 @@ description: "Purpose-built CRM for contractor lead management and sales trackin
 
 # Custom CRM Build
 
-## Why a Custom CRM?
+## Why You Need a Marketing CRM
 
-You're currently using BuilderTrend (or similar) for project management. That's great for managing jobs, but it wasn't built for:
+Your current tools handle day-to-day operations, but they weren't built for:
 
 - **Marketing attribution** - Where did this lead come from?
 - **Lead nurturing** - Automated follow-up sequences
 - **Sales pipeline** - Track leads from inquiry to close
 - **ROI tracking** - Which marketing channels drive revenue?
 
-## Two Options
+A dedicated marketing CRM fills these gaps and makes your ad spend work harder.
 
-### Option A: Full Replacement
+---
 
-Build a complete CRM that handles everything from lead capture to project completion.
+## Your Options
 
-**Pros:**
-- One system for everything
-- No monthly SaaS fees
-- Fully customized to your workflow
+We have three approaches depending on your current setup and goals:
 
-**Cons:**
-- Larger scope, longer timeline
-- Replaces what already works (project management)
+### Option A: Standalone Marketing CRM
 
-### Option B: Marketing CRM + Integration (Recommended)
+Build a dedicated lead management system that operates independently.
 
-Build a lead management and marketing automation system that integrates with BuilderTrend.
+| Benefit | Details |
+|---------|---------|
+| No dependencies | Works regardless of your other tools |
+| Purpose-built | Optimized for marketing & sales |
+| Full control | Custom workflows for your process |
+| Fast to launch | Focused scope, faster delivery |
 
-**Pros:**
-- Keep what works (project management)
-- Faster to build
-- Purpose-built for marketing/sales
-- Clean handoff: Lead closes → Goes to BuilderTrend
+**Best for:** Teams who want a clean separation between marketing/sales and project management.
 
-**Cons:**
-- Two systems to manage
-- Integration maintenance
+**How it works:**
+```
+Lead comes in → Marketing CRM tracks & nurtures
+                        ↓
+               Lead converts to customer
+                        ↓
+         Manual handoff to project management
+```
 
-**Our Recommendation:** Option B - Start with marketing CRM, expand later if needed.
+---
+
+### Option B: CRM + Integration with Existing Tools
+
+Build the marketing CRM and integrate it with your existing project management software.
+
+| Benefit | Details |
+|---------|---------|
+| Keep what works | No disruption to current operations |
+| Automated handoff | Won deals flow to your PM tool |
+| Single source of truth | Lead data syncs both ways |
+| Best of both | Marketing focus + operational continuity |
+
+**Best for:** Teams with established project management tools they want to keep (BuilderTrend, JobTread, CoConstruct, Builderbooks, etc.)
+
+**How it works:**
+```
+Lead comes in → Marketing CRM tracks & nurtures
+                        ↓
+               Lead converts to customer
+                        ↓
+    Automatic sync to your project management tool
+```
+
+**Supported integrations:**
+- BuilderTrend
+- JobTread
+- CoConstruct
+- Builderbooks
+- Monday.com
+- Custom/other (API dependent)
+
+---
+
+### Option C: Full Replacement Platform
+
+Build a complete system that handles everything from lead capture to project completion.
+
+| Benefit | Details |
+|---------|---------|
+| One system | Everything in one place |
+| No monthly SaaS | Own it outright, no subscriptions |
+| Fully custom | Built exactly for your workflow |
+| Complete visibility | End-to-end customer journey |
+
+**Best for:** Teams ready to consolidate tools or those without an existing PM system.
+
+**How it works:**
+```
+Lead comes in → CRM tracks & nurtures
+                        ↓
+               Lead converts to customer
+                        ↓
+         Same system manages the project
+                        ↓
+            Invoicing, scheduling, etc.
+```
+
+**Trade-offs:**
+- Larger scope = longer build time
+- Replaces tools that may already work well
+- More training required
+
+---
+
+## Our Recommendation
+
+**Start with Option A or B** - get marketing attribution and lead nurturing working first. Expand later based on actual needs.
+
+| If you... | We recommend... |
+|-----------|-----------------|
+| Don't have project management software | Option A (standalone) |
+| Have PM software you like | Option B (integration) |
+| Want to consolidate everything | Option C (full replacement) |
+| Aren't sure yet | Option A (easiest to expand later) |
+
+---
 
 ## CRM Core Features
+
+Regardless of which option you choose, you get these features:
 
 ### Lead Management
 
 **Lead Capture:**
 ```
-Website Form → CRM (auto-created lead)
-Phone Call (CallRail) → CRM (auto-created lead)
-Manual Entry → CRM
+Website Form    → Auto-created lead
+Phone Call      → Auto-created lead (via CallRail)
+Google/Meta Ads → Auto-created lead
+Manual Entry    → Quick-add form
 ```
 
 **Lead Record Contains:**
@@ -65,7 +145,8 @@ Manual Entry → CRM
 - Notes and communication history
 
 **Lead Scoring:**
-Automatically score leads based on:
+Automatically prioritize hot leads:
+
 | Factor | Points |
 |--------|--------|
 | Form submission | +10 |
@@ -78,7 +159,7 @@ Automatically score leads based on:
 
 ### Pipeline Management
 
-**Stages:**
+**Visual Pipeline Stages:**
 ```
 New Lead
     ↓
@@ -90,16 +171,17 @@ Estimate Sent (proposal delivered)
     ↓
 Negotiating (follow-up phase)
     ↓
-Won → Handoff to BuilderTrend
-Lost → Lost reason captured
+Won → Handoff to next step
+Lost → Reason captured for analysis
 ```
 
-**Pipeline View:**
-Visual Kanban board showing all leads by stage, with:
-- Lead name and service
-- Days in stage
-- Lead value (estimated project size)
-- Next action due
+**Pipeline View Features:**
+- Visual Kanban board (drag & drop)
+- Lead name and service type
+- Days in current stage
+- Estimated project value
+- Next action due date
+- Mobile-friendly interface
 
 ### Automation
 
@@ -107,10 +189,9 @@ Visual Kanban board showing all leads by stage, with:
 When a new lead comes in:
 - Email to sales team
 - SMS to sales team
-- Slack notification (optional)
+- Push notification (mobile app)
 
-**Auto-Response:**
-Immediate email to lead:
+**Auto-Response to Leads:**
 ```
 Subject: Thanks for contacting BNC Builders!
 
@@ -118,8 +199,8 @@ Hi [First Name],
 
 Thank you for reaching out about your [service] project.
 
-A member of our team will contact you within [X hours] to
-discuss your project and schedule a free consultation.
+A member of our team will contact you within [X hours]
+to discuss your project and schedule a free consultation.
 
 In the meantime, check out some of our recent work:
 [Portfolio Link]
@@ -135,11 +216,11 @@ If no response after 24 hours:
 - Day 7: Email with portfolio
 - Day 14: "Still interested?" email
 
-**Re-Engagement:**
+**Re-Engagement Campaigns:**
 For leads that went cold:
 - 30-day check-in
 - 90-day seasonal outreach
-- Newsletter (monthly)
+- Monthly newsletter
 
 ### Reporting & Analytics
 
@@ -151,13 +232,15 @@ For leads that went cold:
 - Average days to close
 - Revenue by source
 
-**Reports Available:**
-| Report | Purpose |
-|--------|---------|
+**Available Reports:**
+
+| Report | What It Tells You |
+|--------|-------------------|
 | Lead Source ROI | Which channels drive revenue |
 | Sales Performance | Close rates, cycle time |
 | Service Analysis | Which services convert best |
 | Location Analysis | Which areas are most profitable |
+| Response Time | How fast you're following up |
 
 ### Offline Conversion Tracking
 
@@ -187,69 +270,42 @@ Google optimizes for more deals like this
 
 **Result:** Google Ads (and Meta) optimize for revenue, not just leads.
 
+---
+
+## Mobile Experience
+
+The CRM is fully mobile-optimized:
+
+| Feature | Mobile Support |
+|---------|----------------|
+| Lead list view | Swipe actions, tap to call |
+| Pipeline board | Touch-friendly drag & drop |
+| Lead details | Click-to-call, click-to-text |
+| Notifications | Push alerts for new leads |
+| Quick actions | Add notes, log calls on the go |
+| Offline mode | View leads without connection |
+
+**CSR can manage leads from anywhere:**
+- Respond to leads while in the field
+- Log calls immediately after hanging up
+- Move leads through pipeline with one tap
+- Get notified of hot leads instantly
+
+---
+
 ## Technical Architecture
 
 ### Tech Stack
 
 | Layer | Technology | Why |
 |-------|------------|-----|
-| Frontend | Next.js 14 | Fast, modern, React-based |
+| Frontend | Next.js 14 | Fast, modern, mobile-first |
 | Backend | Next.js API Routes | Serverless, scalable |
 | Database | Supabase (PostgreSQL) | Reliable, real-time capable |
 | Auth | Supabase Auth | Secure, easy user management |
 | Email | Resend | Modern, developer-friendly |
 | SMS | Twilio | Industry standard |
-| Hosting | Vercel | Fast deploys, great DX |
-
-### Database Schema (Simplified)
-
-```
-leads
-├── id
-├── first_name
-├── last_name
-├── email
-├── phone
-├── address
-├── service_interest
-├── lead_source
-├── utm_source
-├── utm_medium
-├── utm_campaign
-├── utm_content
-├── gclid (Google Click ID)
-├── fbclid (Facebook Click ID)
-├── lead_score
-├── pipeline_stage
-├── assigned_to
-├── estimated_value
-├── created_at
-├── updated_at
-
-activities
-├── id
-├── lead_id
-├── type (email, call, note, stage_change)
-├── content
-├── created_by
-├── created_at
-
-automations
-├── id
-├── name
-├── trigger
-├── actions
-├── active
-
-estimates
-├── id
-├── lead_id
-├── amount
-├── status
-├── sent_at
-├── viewed_at
-├── signed_at
-```
+| Hosting | Vercel | Fast deploys, global CDN |
 
 ### Integrations
 
@@ -260,65 +316,60 @@ estimates
 | GA4 | Outbound | Event tracking |
 | Google Ads | Outbound | Offline conversions |
 | Meta Ads | Outbound | Offline conversions |
-| BuilderTrend | Outbound | Won deal handoff |
+| Your PM Tool | Outbound | Won deal handoff (Option B) |
 | Email (Gmail) | Both | Communication logging |
 | Calendar | Both | Appointment scheduling |
 
+---
+
 ## User Interface
 
-### Lead List View
+### Lead List View (Mobile-Optimized)
 ```
-┌─────────────────────────────────────────────────────────────┐
-│ Leads                                        [+ New Lead]   │
-├─────────────────────────────────────────────────────────────┤
-│ Filter: All | New | Contacted | Appt Set | Estimate | Won   │
-├─────────────────────────────────────────────────────────────┤
-│ ☐ John Smith      Kitchen      Google Ads    2h ago    85   │
-│ ☐ Sarah Johnson   ADU          Organic       1d ago    92   │
-│ ☐ Mike Williams   Bathroom     Meta          2d ago    78   │
-│ ☐ Lisa Brown      Deck         Referral      3d ago    65   │
-└─────────────────────────────────────────────────────────────┘
-```
-
-### Lead Detail View
-```
-┌─────────────────────────────────────────────────────────────┐
-│ ← Back    John Smith                    Score: 85    ⭐     │
-├─────────────────────────────────────────────────────────────┤
-│ Contact Info          │ Lead Details                        │
-│ ─────────────         │ ────────────                        │
-│ 📱 (619) 555-1234     │ Service: Kitchen Remodeling        │
-│ ✉️ john@email.com     │ Source: Google Ads                  │
-│ 📍 Escondido, CA      │ Campaign: kitchen_remodel_sd        │
-│                       │ Timeline: 1-3 months                │
-│ [Call] [Email] [SMS]  │ Est. Value: $45,000                │
-├─────────────────────────────────────────────────────────────┤
-│ Pipeline: [New] → [Contacted] → [Appt Set] → [Est] → [Won] │
-├─────────────────────────────────────────────────────────────┤
-│ Activity Timeline                                           │
-│ ─────────────────                                           │
-│ Today 2:30pm - Form submitted (Kitchen page)               │
-│ Today 2:31pm - Auto-response email sent                    │
-│ Today 2:32pm - Assigned to Sales Team                      │
-│ [+ Add Note]  [+ Log Call]  [+ Send Email]                 │
-└─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────┐
+│ Leads                    [+ Add]    │
+├─────────────────────────────────────┤
+│ Filter: All │ New │ Hot │ Today     │
+├─────────────────────────────────────┤
+│ ┌─────────────────────────────────┐ │
+│ │ John Smith            Score: 85│ │
+│ │ Kitchen Remodel • Google Ads   │ │
+│ │ 📞 Tap to call         2h ago  │ │
+│ └─────────────────────────────────┘ │
+│ ┌─────────────────────────────────┐ │
+│ │ Sarah Johnson         Score: 92│ │
+│ │ ADU Build • Organic            │ │
+│ │ 📞 Tap to call         1d ago  │ │
+│ └─────────────────────────────────┘ │
+└─────────────────────────────────────┘
 ```
 
-### Pipeline Board View
+### Lead Detail View (Mobile-Optimized)
 ```
-┌───────────┬───────────┬───────────┬───────────┬───────────┐
-│   NEW     │ CONTACTED │  APPT SET │  ESTIMATE │    WON    │
-│   (5)     │    (3)    │    (2)    │    (4)    │   (12)    │
-├───────────┼───────────┼───────────┼───────────┼───────────┤
-│ ┌───────┐ │ ┌───────┐ │ ┌───────┐ │ ┌───────┐ │ ┌───────┐ │
-│ │J Smith│ │ │M Jones│ │ │L Davis│ │ │R White│ │ │T Green│ │
-│ │Kitchen│ │ │  ADU  │ │ │Bath   │ │ │Kitchen│ │ │Kitchen│ │
-│ │$45,000│ │ │$150k  │ │ │$28,000│ │ │$52,000│ │ │$48,000│ │
-│ │ 2h    │ │ │ 1d    │ │ │ 3d    │ │ │ 5d    │ │ │$48,000│ │
-│ └───────┘ │ └───────┘ │ └───────┘ │ └───────┘ │ └───────┘ │
-│    ...    │    ...    │    ...    │    ...    │    ...    │
-└───────────┴───────────┴───────────┴───────────┴───────────┘
+┌─────────────────────────────────────┐
+│ ← John Smith            Score: 85  │
+├─────────────────────────────────────┤
+│  [📞 Call]  [💬 Text]  [✉️ Email]  │
+├─────────────────────────────────────┤
+│ Service: Kitchen Remodeling        │
+│ Source: Google Ads                 │
+│ Timeline: 1-3 months               │
+│ Est. Value: $45,000                │
+├─────────────────────────────────────┤
+│ Pipeline                           │
+│ [New]→[Contacted]→[Appt]→[Est]→Won │
+│        ^^^                         │
+├─────────────────────────────────────┤
+│ Activity                           │
+│ • 2:30pm - Form submitted          │
+│ • 2:31pm - Auto-response sent      │
+│ • 2:32pm - Assigned to team        │
+│                                    │
+│ [+ Add Note]  [📞 Log Call]        │
+└─────────────────────────────────────┘
 ```
+
+---
 
 ## Development Timeline
 
@@ -326,7 +377,7 @@ estimates
 - Database setup
 - Lead management (CRUD)
 - Pipeline stages
-- Basic UI
+- Basic UI (mobile-first)
 
 ### Sprint 2 (Weeks 9-10): Integrations
 - Website form integration
@@ -340,17 +391,35 @@ estimates
 - User training
 - Launch
 
+---
+
 ## Deliverables
 
 At the end of the CRM build, you'll have:
 
 1. **Lead Management System** - Capture, track, and manage all leads
-2. **Pipeline Dashboard** - Visual sales pipeline
+2. **Pipeline Dashboard** - Visual sales pipeline (mobile-friendly)
 3. **Automation Engine** - Auto-responses, follow-up sequences
 4. **Reporting** - Lead source ROI, close rates, revenue tracking
 5. **Integrations** - Website, CallRail, Google Ads, Meta
-6. **User Training** - Documentation and walkthrough
-7. **Source Code** - You own it completely
+6. **Mobile Access** - Full functionality on phone/tablet
+7. **User Training** - Documentation and walkthrough
+8. **Source Code** - You own it completely
+
+---
+
+## What You Own
+
+| Asset | Ownership |
+|-------|-----------|
+| Source code | 100% yours |
+| Database | 100% yours |
+| All lead data | 100% yours |
+| Automations | 100% yours |
+| No monthly fees | Just hosting (~$20/mo) |
+| No lock-in | Take it anywhere |
+
+---
 
 ## Ongoing Support
 
@@ -362,6 +431,8 @@ At the end of the CRM build, you'll have:
 
 **Major feature additions:** Quoted separately
 
+---
+
 ## Future Possibilities
 
 Once the core CRM is running, we can add:
@@ -370,6 +441,6 @@ Once the core CRM is running, we can add:
 - Review request automation
 - Referral tracking
 - Advanced reporting
-- Mobile app
+- Native mobile app
 
 **Start simple, expand based on needs.**
