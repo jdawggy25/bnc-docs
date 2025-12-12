@@ -426,13 +426,21 @@ We'll recommend the best platform based on your needs. Here are the options:
 
 ### Initial Build Payments
 
-| Milestone | Amount | When |
-|-----------|--------|------|
-| Project Kickoff | $5,000 | Day 1 |
-| Website Launch | $5,000 | Week 4 |
-| CRM Sprint Start | $7,500 | Week 7 |
-| CRM Launch | $7,500 | Week 12 |
-| **Total Build Investment** | **$25,000** | |
+**Website Build ($10,000)**
+
+| Payment | Amount | When |
+|---------|--------|------|
+| 50% Deposit | $5,000 | Project kickoff |
+| 50% Completion | $5,000 | Website launch (Week 4) |
+
+**CRM Build ($15,000)**
+
+| Payment | Amount | When |
+|---------|--------|------|
+| 50% Deposit | $7,500 | CRM sprint start (Week 7) |
+| 50% Completion | $7,500 | CRM launch (Week 12) |
+
+| **Total Build Investment** | **$25,000** |
 
 ### Ongoing Monthly Payments (Beginning Week 5)
 
