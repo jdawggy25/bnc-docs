@@ -62,33 +62,62 @@ Confirm access to:
 
 ## Phase 2: Technology Stack
 
-### Recommended Architecture
+### Platform Options
 
-| Layer | Technology | Why |
-|-------|------------|-----|
-| Framework | Astro | Blazing fast, SEO-optimized |
-| CMS | Sanity | Headless, easy for your team to edit |
-| Hosting | Vercel | Edge CDN, automatic deploys |
-| Forms | Custom webhooks | Direct to CRM |
-| Images | Vercel Image Optimization | Auto WebP, lazy loading |
+We'll recommend the best platform based on your team's needs. Here are the options:
 
-### Why Not WordPress?
+| Option | Best For | CMS Experience | Performance | Monthly Hosting |
+|--------|----------|----------------|-------------|-----------------|
+| **Astro + Sanity** | Maximum SEO & speed | Modern, clean interface | 95-100 | $0-20 |
+| **Next.js + Sanity** | Dynamic features | Modern, clean interface | 90-98 | $0-20 |
+| **WordPress + WP Engine** | Familiar editing | Traditional WP admin | 70-85 | $25-50 |
+| **Webflow** | Visual design control | Visual drag-and-drop | 80-90 | $30-50 |
 
-| Factor | WordPress | Astro |
-|--------|-----------|-------|
-| Speed | Slow (plugins, database) | Lightning fast (static) |
-| Security | Constant updates, vulnerabilities | Zero attack surface |
-| Maintenance | Plugin updates, backups | None required |
-| Performance Score | 40-70 typical | 95-100 achievable |
-| Hosting Cost | $50-200/month | Free-$20/month |
+### Platform Comparison
 
-### Core Web Vitals Targets
+| Factor | Astro/Next.js | WordPress | Webflow |
+|--------|---------------|-----------|---------|
+| Page Speed | Excellent | Moderate | Good |
+| SEO Control | Full | Full (with plugins) | Good |
+| Security | Zero attack surface | Requires maintenance | Managed |
+| Content Editing | Headless CMS (Sanity) | Traditional admin | Visual editor |
+| Developer Control | Complete | Plugin-dependent | Limited |
+| Scalability | Unlimited | Hosting-dependent | Plan-dependent |
+| Your Ownership | Full code access | Full with hosting | Export limitations |
 
-| Metric | Target | Scorpion (Estimated) |
-|--------|--------|---------------------|
-| LCP (Largest Contentful Paint) | < 2.5s | 3-4s |
-| FID/INP (Interaction) | < 100ms | Unknown |
-| CLS (Layout Shift) | < 0.1 | 0.1-0.2 |
+### Our Recommendation
+
+We'll evaluate during discovery week and recommend based on:
+- How often your team updates content
+- Technical comfort level
+- Required third-party integrations
+- Long-term growth plans
+
+*All options deliver the same SEO foundation. The choice affects your editing experience and ongoing costs.*
+
+### Core Web Vitals: Current vs Target
+
+**Desktop Performance**
+
+| Metric | Current (Scorpion) | Target (New Site) | Improvement |
+|--------|-------------------|-------------------|-------------|
+| Performance Score | 80 | 95+ | +15 points |
+| LCP | 3.1s | < 1.5s | 2x faster |
+| FCP | 0.6s | < 0.5s | Maintain |
+| TBT | 0ms | < 50ms | Maintain |
+| CLS | 0.04 | < 0.05 | Maintain |
+
+**Mobile Performance**
+
+| Metric | Current (Scorpion) | Target (New Site) | Improvement |
+|--------|-------------------|-------------------|-------------|
+| Performance Score | 74 | 90+ | +16 points |
+| LCP | 6.1s | < 2.5s | 2.5x faster |
+| FCP | 2.1s | < 1.5s | 40% faster |
+| TBT | 60ms | < 100ms | Maintain |
+| CLS | 0 | < 0.1 | Maintain |
+
+*Mobile LCP of 6.1s is the critical issue—this hurts both conversions and Google rankings.*
 
 ## Phase 3: URL Structure Preservation
 

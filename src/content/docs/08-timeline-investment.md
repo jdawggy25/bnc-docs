@@ -108,235 +108,239 @@ Ongoing monthly work:
 | CRM Completion | $5,000 | Week 12 (at launch) |
 | **Total Initial Build** | **$20,000** | |
 
-### Monthly Retainer
+### Monthly Retainer — Fixed Services
 
-| Service | Monthly |
-|---------|---------|
-| SEO & Content | Included |
-| Google Ads Management | Included |
-| Meta Ads Management | Included |
-| CRM Development | Included |
-| Social Media | Included |
-| Reporting & Strategy | Included |
-| **Monthly Retainer** | **$5,000/mo** |
-
-*Retainer begins after website launch (Week 5)*
-
-### Ad Spend (Paid to Platforms)
-
-| Platform | Recommended Monthly |
-|----------|---------------------|
-| Google Ads | $6,800 |
-| Meta Ads | $3,500 |
-| **Total Ad Spend** | **$10,300/mo** |
-
-*Ad spend is paid directly to Google/Meta, not to us. This is adjustable based on your budget and goals.*
-
-### Total Monthly Cost (After Launch)
-
-| Item | Monthly |
-|------|---------|
-| Retainer | $5,000 |
-| Ad Spend | $10,300 |
-| **Total** | **$15,300/mo** |
+| Service | Monthly | Hours | Key Deliverables |
+|---------|---------|-------|------------------|
+| SEO & Content | $1,500 | 10-12 hrs | 2-4 new pages, technical SEO, keyword optimization |
+| Link Building & Local SEO | $1,000 | 8-10 hrs | 5-10 backlinks, citations, GBP management |
+| Development & CRM | $1,000 | 8 hrs | Site expansion, CRM enhancements, integrations |
+| Social Media & Reporting | $1,000 | 8-10 hrs | 12-16 posts, monthly reports, strategy calls |
+| **Fixed Services Total** | **$4,500** | **34-40 hrs** | |
 
 ---
 
-## What's Included in the Retainer
+### Paid Advertising Management — 12.5% of Ad Spend
 
-### SEO & Content Creation
+| Monthly Ad Spend | Management Fee | Total Hours |
+|------------------|----------------|-------------|
+| $5,000 | $625 | 6-8 hrs |
+| $7,500 | $937.50 | 8-10 hrs |
+| $10,000 | $1,250 | 10-12 hrs |
+| $10,300 (recommended) | $1,287.50 | 10-12 hrs |
+| $15,000 | $1,875 | 14-16 hrs |
+| $20,000 | $2,500 | 18-20 hrs |
 
-**Monthly New Pages (2-4 pages/month):**
-- Service area pages targeting new locations
-- Blog posts targeting long-tail keywords
-- Project showcase pages with optimized content
-- FAQ pages answering common customer questions
+**Why percentage-based pricing?**
 
-**On-Page SEO:**
-- Title tag and meta description optimization
-- Header structure (H1, H2, H3) improvements
-- Internal linking strategy
-- Image alt text and compression
-- Schema markup updates
+Ad management workload scales directly with spend. Higher budgets require:
+- More campaigns and ad groups to manage
+- Increased bid adjustments and optimization frequency
+- Additional creative variations and A/B testing
+- More granular audience segmentation
+- Enhanced reporting and analysis depth
+- Greater strategic oversight and risk management
+
+Industry standard for professional ad management ranges from 10-20% of spend. Our 12.5% rate reflects dedicated, hands-on management with daily optimization—not set-and-forget automation.
+
+---
+
+### Total Monthly Investment (at Recommended Spend)
+
+| Line Item | Amount |
+|-----------|--------|
+| Fixed Services (SEO, Links, Dev, Social) | $4,500.00 |
+| Ad Management (12.5% × $10,300) | $1,287.50 |
+| **Monthly Retainer Total** | **$5,787.50** |
+| Ad Spend (paid to Google/Meta) | $10,300.00 |
+| **Total Monthly Investment** | **$16,087.50** |
+
+*Retainer begins after website launch (Week 5). Ad management fee adjusts automatically with spend changes.*
+
+### Recommended Ad Spend (Paid Directly to Platforms)
+
+| Platform | Monthly Budget | Primary Objective |
+|----------|----------------|-------------------|
+| Google Ads | $6,800 | High-intent search capture |
+| Meta Ads | $3,500 | Awareness, retargeting, lookalikes |
+| **Total Ad Spend** | **$10,300** | |
+
+*Ad spend is paid directly to Google and Meta, not to Comcreate. Budget is adjustable based on goals, seasonality, and performance.*
+
+---
+
+## Service Specifications
+
+### SEO & Content — $1,500/month (10-12 Hours)
+
+**Hour Allocation:**
+
+| Activity | Hours/Month | Deliverables |
+|----------|-------------|--------------|
+| Content Creation | 4-5 hrs | 2-4 new pages (service areas, blogs, showcases) |
+| On-Page Optimization | 2-3 hrs | Title tags, metas, headers, internal linking |
+| Technical SEO | 2-3 hrs | Crawls, fixes, speed monitoring, schema |
+| Keyword Research & Tracking | 1-2 hrs | 50+ keywords tracked, gap analysis |
+
+**Monthly Deliverables:**
+- 2-4 new optimized pages published
+- Technical SEO audit report
+- Keyword ranking report (50+ terms)
 - Core Web Vitals monitoring
+- Sitemap and index coverage updates
 
-**Technical SEO:**
-- Monthly site crawls for errors
-- Broken link identification and fixes
-- Sitemap updates
-- Robots.txt optimization
-- Page speed monitoring
-- Mobile usability checks
-- Index coverage monitoring
-
-**Keyword Strategy:**
-- Monthly keyword research
-- Competitor keyword gap analysis
-- Search intent mapping
-- Ranking position tracking
-- Opportunity identification
+**Content Types:**
+- Service area expansion pages
+- Blog posts targeting long-tail keywords
+- Project showcase pages with schema markup
+- FAQ pages for featured snippet targeting
 
 ---
 
-### Link Building & Authority
+### Link Building & Local SEO — $1,000/month (8-10 Hours)
+
+**Hour Allocation:**
+
+| Activity | Hours/Month | Deliverables |
+|----------|-------------|--------------|
+| Backlink Outreach | 4-5 hrs | 5-10 quality backlinks acquired |
+| Citation Management | 2-3 hrs | Directory submissions, NAP consistency |
+| GBP Management | 2 hrs | Weekly posts, review responses, Q&A |
 
 **Backlink Acquisition (5-10 links/month):**
 
-| Link Type | Description |
-|-----------|-------------|
-| Local Citations | Yelp, BBB, Houzz, Angi, HomeAdvisor, local directories |
-| Industry Directories | Contractor-specific directories and associations |
-| Guest Posts | Articles on home improvement and local blogs |
-| HARO/Connectively | Expert quotes in journalist articles |
-| Resource Links | Getting listed on "best contractors" lists |
-| Supplier Links | Backlinks from material suppliers and partners |
+| Link Type | Est. Value | Description |
+|-----------|------------|-------------|
+| Local Citations | $50-100/ea | Yelp, BBB, Houzz, Angi, HomeAdvisor |
+| Industry Directories | $75-150/ea | Contractor associations, trade directories |
+| Guest Posts | $200-400/ea | Home improvement blogs, local publications |
+| HARO/Connectively | $300-500/ea | Expert quotes in journalist articles |
+| Resource Links | $150-300/ea | "Best contractors" lists, resource pages |
 
-**Link Building Process:**
-1. Prospect identification (relevant, high-authority sites)
-2. Outreach and relationship building
-3. Content creation for placements
-4. Link monitoring and maintenance
-5. Toxic link disavowal (if needed)
-
-**Authority Building:**
-- Google Business Profile optimization
-- Review generation strategy
-- Local press mentions
-- Industry award submissions
-- Community involvement features
-
----
-
-### Local SEO
+*Industry average for quality link acquisition: $200-500 per link. Monthly link building value: $1,000-5,000.*
 
 **Google Business Profile Management:**
-- Weekly post updates
-- Photo uploads (projects, team)
+- Weekly post updates (4/month)
+- Photo uploads (projects, team, before/after)
 - Q&A monitoring and responses
-- Review response (within 24 hours)
-- Category optimization
-- Service area updates
-- Attribute management
+- Review response within 24 hours
+- Category and service area optimization
 
-**Local Citations:**
-- NAP (Name, Address, Phone) consistency audit
-- Citation building on 50+ directories
+**Local Citation Building:**
+- NAP consistency audit and corrections
+- 50+ directory presence maintained
+- Industry-specific submissions
 - Duplicate listing cleanup
-- Industry-specific directory submissions
-
-**Review Strategy:**
-- Automated review request sequences
-- Review response templates
-- Negative review management
-- Review velocity monitoring
 
 ---
 
-### CRM Development & Maintenance
+### Development & CRM — $1,000/month (8 Hours)
 
-**Ongoing Development (8-12 hours/month):**
+**Hour Allocation:**
+
+| Activity | Hours/Month | Deliverables |
+|----------|-------------|--------------|
+| Feature Development | 4-5 hrs | New functionality, enhancements |
+| Site Expansion | 2-3 hrs | New pages, landing pages, updates |
+| Maintenance & Support | 1 hr | Bug fixes, performance monitoring |
+
+**Development Scope:**
 
 | Category | Examples |
 |----------|----------|
-| New Features | Custom reports, new automations, workflow improvements |
-| Enhancements | UI improvements, speed optimization, mobile updates |
-| Integrations | New tool connections, API updates, data syncs |
-| Bug Fixes | Issue resolution, edge case handling |
+| CRM Enhancements | New automations, custom reports, workflow improvements |
+| Site Expansion | New landing pages, service pages, campaign pages |
+| Integrations | Tool connections, API updates, data syncs |
+| Performance | Speed optimization, mobile improvements, UX updates |
 
-**Monthly CRM Work Includes:**
-- Feature requests and prioritization
-- Sprint planning for enhancements
-- Testing and quality assurance
-- User feedback implementation
-- Performance monitoring
-- Security updates
-- Database optimization
-- Backup verification
+**Monthly Development Process:**
+1. Feature request intake and prioritization
+2. Sprint planning (first week of month)
+3. Development and testing
+4. Deployment and QA
+5. Documentation and training (as needed)
 
-**Examples of Monthly Enhancements:**
-- New dashboard widgets
-- Custom report builders
-- Additional automation triggers
-- Improved mobile experience
-- New notification options
-- Enhanced lead scoring rules
-- Additional pipeline stages
-- Team performance tracking
+**Rollover Policy:** Unused development hours roll over for up to 60 days. Large projects can be scoped separately.
 
 ---
 
-### Paid Advertising Management
+### Paid Advertising Management — 12.5% of Ad Spend (Scales with Budget)
 
-**Google Ads:**
-- Campaign structure optimization
-- Keyword bid management (daily)
-- Negative keyword additions
-- Ad copy A/B testing
-- Landing page recommendations
-- Quality Score improvement
-- Budget pacing and allocation
-- Conversion tracking verification
-- Search term analysis
-- Competitor monitoring
+**Hour Allocation by Spend Level:**
 
-**Meta Ads (Facebook/Instagram):**
-- Audience testing and refinement
-- Creative development and testing
-- Placement optimization
-- Retargeting campaign management
-- Lookalike audience building
-- Budget optimization
-- Conversion API maintenance
-- Creative refresh (monthly)
+| Monthly Spend | Mgmt Fee | Hours | Optimization Level |
+|---------------|----------|-------|-------------------|
+| $5,000 | $625 | 6-8 hrs | Standard |
+| $10,000 | $1,250 | 10-12 hrs | Enhanced |
+| $15,000 | $1,875 | 14-16 hrs | Premium |
+| $20,000+ | $2,500+ | 18-20+ hrs | Enterprise |
 
-**Reporting:**
-- Weekly performance snapshots
-- Monthly deep-dive reports
-- Conversion attribution analysis
-- Cost per lead tracking
-- ROI calculations
+**Google Ads Management:**
+
+| Activity | Frequency | Description |
+|----------|-----------|-------------|
+| Bid Management | Daily | Keyword bids, device adjustments, geo modifiers |
+| Search Term Review | 2x/week | Negative keyword additions, query sculpting |
+| Ad Copy Testing | Ongoing | A/B testing headlines, descriptions, CTAs |
+| Quality Score Optimization | Weekly | Landing page alignment, relevance improvements |
+| Budget Pacing | Daily | Spend allocation, dayparting adjustments |
+| Conversion Tracking | Weekly | Verification, attribution analysis |
+
+**Meta Ads Management:**
+
+| Activity | Frequency | Description |
+|----------|-----------|-------------|
+| Audience Refinement | Weekly | Interest targeting, custom audiences, lookalikes |
+| Creative Testing | Ongoing | Image/video variations, copy testing |
+| Placement Optimization | Weekly | Feed, Stories, Reels performance analysis |
+| Retargeting | Ongoing | Website visitors, engaged users, lead nurturing |
+| Conversion API | Monthly | Server-side tracking maintenance |
+
+**Reporting Cadence:**
+- Daily: Spend monitoring, anomaly alerts
+- Weekly: Performance snapshot, optimization notes
+- Monthly: Comprehensive report with insights and recommendations
 
 ---
 
-### Social Media Management
+### Social Media & Reporting — $1,000/month (8-10 Hours)
 
-**Content Calendar:**
-- 12-16 posts per month
-- Mix of project showcases, tips, team content
-- Platform-specific formatting
+**Hour Allocation:**
+
+| Activity | Hours/Month | Deliverables |
+|----------|-------------|--------------|
+| Content Creation | 4-5 hrs | 12-16 posts, graphics, copy |
+| Community Management | 2-3 hrs | Comments, messages, engagement |
+| Reporting & Strategy | 2 hrs | Monthly reports, strategy call |
+
+**Social Media Deliverables:**
+
+| Deliverable | Quantity | Details |
+|-------------|----------|---------|
+| Feed Posts | 12-16/month | Project showcases, tips, team content |
+| Stories | 8-12/month | Behind-the-scenes, quick updates |
+| Community Response | Daily | Comments, DMs, mentions |
+| Hashtag Strategy | Monthly | Research and optimization |
 
 **Platforms Managed:**
-- Facebook
-- Instagram
-- (LinkedIn optional)
+- Facebook (primary)
+- Instagram (primary)
+- LinkedIn (optional, upon request)
 
-**Activities:**
-- Post scheduling and publishing
-- Comment monitoring and response
-- Message monitoring
-- Hashtag strategy
-- Story content (2-3/week)
-- Community engagement
-
----
-
-### Reporting & Strategy
-
-**Monthly Deliverables:**
+**Monthly Reporting Package:**
 
 | Report | Contents |
 |--------|----------|
-| SEO Report | Rankings, traffic, backlinks, technical health |
-| Ads Report | Spend, leads, cost per lead, conversion rates |
-| CRM Report | Lead volume, pipeline value, close rates |
-| Social Report | Engagement, reach, follower growth |
+| SEO Performance | Rankings, organic traffic, backlinks, technical health |
+| Advertising Performance | Spend, leads, CPL, conversion rates, ROAS |
+| CRM Analytics | Lead volume, pipeline value, close rates, velocity |
+| Social Metrics | Engagement rate, reach, follower growth, top content |
+| Executive Summary | Key wins, challenges, next month priorities |
 
 **Strategy Sessions:**
-- Monthly 30-minute strategy call
-- Quarterly 60-minute business review
-- Performance analysis and recommendations
-- Goal setting and tracking
-- Competitive landscape updates
+- Monthly 30-minute performance review call
+- Quarterly 60-minute strategic planning session
+- Ad-hoc consultation as needed
 
 ---
 
@@ -344,20 +348,38 @@ Ongoing monthly work:
 
 ### Website Build ($10,000 total)
 
+**Core Deliverables:**
 - Full site architecture and planning
 - 200+ page carbon-copy migration
-- Modern tech stack (Astro + Sanity CMS)
-- Enhanced schema markup
+- Enhanced schema markup (LocalBusiness, FAQ, Review)
 - Core Web Vitals optimization
 - Mobile-first responsive design
 - Contact forms with CRM integration
 - Google Tag Manager setup
 - GA4 configuration
 - Call tracking integration
-- Vercel hosting setup
 - SSL certificate
 - Launch support
 - 30-day post-launch support
+
+**Technology Stack Options:**
+
+We'll recommend the best platform based on your needs. Here are the options:
+
+| Option | Best For | CMS | Hosting | Monthly Cost |
+|--------|----------|-----|---------|--------------|
+| **Astro + Sanity** | Maximum performance, SEO-first | Sanity Studio | Vercel | ~$0-20 |
+| **Next.js + Sanity** | Dynamic features, app-like feel | Sanity Studio | Vercel | ~$0-20 |
+| **WordPress + Flavor** | Familiar editing, extensive plugins | WordPress | WP Engine/Flavor | ~$25-50 |
+| **Webflow** | Visual editing, designer control | Webflow | Webflow | ~$30-50 |
+
+**Our Recommendation:** We'll evaluate during discovery and recommend based on:
+- Content update frequency
+- Team technical comfort level
+- Required integrations
+- Long-term scalability needs
+
+*All options include the same deliverables. Technology choice affects editing experience, not build cost.*
 
 ### CRM Build ($10,000 total)
 
@@ -402,15 +424,39 @@ Ongoing monthly work:
 
 ## Payment Schedule
 
+### Initial Build Payments
+
 | Milestone | Amount | When |
 |-----------|--------|------|
 | Project Kickoff | $5,000 | Day 1 |
 | Website Launch | $5,000 | Week 4 |
 | CRM Sprint Start | $5,000 | Week 7 |
 | CRM Launch | $5,000 | Week 12 |
-| Monthly Retainer | $5,000 | 1st of each month |
+| **Total Build Investment** | **$20,000** | |
 
-*We accept ACH, wire transfer, or credit card (3% fee for card).*
+### Ongoing Monthly Payments (Beginning Week 5)
+
+| Line Item | Amount | Notes |
+|-----------|--------|-------|
+| Fixed Services | $4,500 | SEO, Links, Dev, Social, Reporting |
+| Ad Management | 12.5% of spend | ~$1,287.50 at recommended budget |
+| **Monthly Retainer** | **~$5,787.50** | Varies with ad spend |
+
+*Billing begins on your start date and recurs automatically each month.*
+
+### Payment Processing
+
+All payments are processed securely through our client portal with automatic billing.
+
+| Method | Processing Fee |
+|--------|----------------|
+| ACH / Bank Transfer | 0.8% (capped at $5) |
+| Credit Card | 2.9% + $0.30 |
+| Zelle | None |
+
+**Zelle:** josh@comcreate.org
+
+*Invoices are generated on your billing date and processed automatically via your saved payment method.*
 
 ---
 
@@ -426,10 +472,10 @@ Ongoing monthly work:
 - All data
 - All accounts
 
-**No lock-in:**
-- No long-term contracts
-- Cancel monthly retainer anytime
+**Full Access:**
+- No long-term contracts required
 - Full access to everything we build
+- Export your data anytime
 
 ### Transparency
 
@@ -469,17 +515,30 @@ Ongoing monthly work:
 - Monthly leads (Month 6): 150
 
 **Monthly Revenue Potential:**
-- 150 leads x 20% close rate = 30 projects
-- 30 projects x $35,000 = $1,050,000/month
+- 150 leads × 20% close rate = 30 projects
+- 30 projects × $35,000 = **$1,050,000/month**
 
 **Monthly Investment:**
-- Retainer: $5,000
-- Ad Spend: $10,300
-- Total: $15,300
 
-**ROI: 68:1**
+| Category | Amount |
+|----------|--------|
+| Fixed Services | $4,500 |
+| Ad Management (12.5%) | $1,287.50 |
+| Ad Spend | $10,300 |
+| **Total Investment** | **$16,087.50** |
 
-*These are illustrative projections. Actual results depend on many factors including market conditions, competition, and sales execution.*
+**Return Analysis:**
+
+| Metric | Value |
+|--------|-------|
+| Monthly Revenue Potential | $1,050,000 |
+| Monthly Investment | $16,087.50 |
+| **ROI** | **65:1** |
+| Cost Per Lead | ~$107 |
+| Cost Per Closed Project | ~$536 |
+| Marketing as % of Revenue | 1.5% |
+
+*Industry benchmark for marketing spend: 5-10% of revenue. These projections assume consistent lead flow and sales execution. Actual results vary based on market conditions, competition, seasonality, and close rates.*
 
 ---
 

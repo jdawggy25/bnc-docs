@@ -195,11 +195,35 @@ const { title, slug, description } = Astro.props;
 
   @media (max-width: 640px) {
     .card-content {
-      min-height: 160px;
+      min-height: 140px;
+      padding: var(--space-4);
     }
 
     .card-title {
       font-size: 1rem;
+    }
+
+    .card-description {
+      font-size: 0.8125rem;
+    }
+
+    /* Better tap target */
+    .doc-card {
+      min-height: 44px;
+    }
+  }
+
+  /* Touch device optimizations */
+  @media (hover: none) {
+    .doc-card:active {
+      background: var(--color-bg);
+      transform: scale(0.98);
+    }
+
+    .doc-card:active .card-icon {
+      background: var(--color-primary);
+      border-color: var(--color-primary);
+      color: white;
     }
   }
 </style>

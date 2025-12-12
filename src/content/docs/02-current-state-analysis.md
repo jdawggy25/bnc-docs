@@ -177,6 +177,30 @@ BNC Builders competes in a crowded San Diego market. Key competitors likely incl
 
 ## Technical Assessment
 
+### Core Web Vitals (Current Performance)
+
+**Desktop (Lighthouse Score: 80/100)**
+
+| Metric | Current | Target | Status |
+|--------|---------|--------|--------|
+| First Contentful Paint (FCP) | 0.6s | < 1.8s | ✅ Good |
+| Largest Contentful Paint (LCP) | 3.1s | < 2.5s | ⚠️ Needs Improvement |
+| Total Blocking Time (TBT) | 0ms | < 200ms | ✅ Good |
+| Cumulative Layout Shift (CLS) | 0.04 | < 0.1 | ✅ Good |
+| Speed Index | 1.6s | < 3.4s | ✅ Good |
+
+**Mobile (Lighthouse Score: 74/100)**
+
+| Metric | Current | Target | Status |
+|--------|---------|--------|--------|
+| First Contentful Paint (FCP) | 2.1s | < 1.8s | ⚠️ Needs Improvement |
+| Largest Contentful Paint (LCP) | 6.1s | < 2.5s | ❌ Poor |
+| Total Blocking Time (TBT) | 60ms | < 200ms | ✅ Good |
+| Cumulative Layout Shift (CLS) | 0 | < 0.1 | ✅ Good |
+| Speed Index | 4.4s | < 3.4s | ⚠️ Needs Improvement |
+
+**Key Issue:** Mobile LCP of 6.1s is significantly impacting user experience and SEO. This is likely due to Scorpion's platform overhead and unoptimized images.
+
 ### What Scorpion Got Right
 - Basic schema markup
 - Mobile responsive
@@ -185,9 +209,11 @@ BNC Builders competes in a crowded San Diego market. Key competitors likely incl
 
 ### What's Missing (Opportunities)
 - Enhanced schema (FAQ, HowTo, Service)
-- Core Web Vitals optimization
+- Core Web Vitals optimization (especially mobile LCP)
 - Internal linking strategy
 - Content depth on service pages
+- Image optimization and lazy loading
+- Modern hosting infrastructure
 
 ## Summary
 
