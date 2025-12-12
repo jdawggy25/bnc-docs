@@ -307,4 +307,4 @@ Let's build something great together.
 
 ---
 
-*Proposal valid for 30 days from December 12, 2024*
+*Proposal valid for 30 days from December 12, 2025*

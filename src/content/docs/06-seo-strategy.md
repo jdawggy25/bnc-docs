@@ -97,7 +97,7 @@ Current Scorpion site likely scores 50-70. Our target: 95+
 
 **Cost Guides (High Search Volume):**
 - "How much does kitchen remodeling cost in San Diego?"
-- "ADU costs in San Diego 2024"
+- "ADU costs in San Diego 2025"
 - "Bathroom remodel cost by project type"
 
 **Comparison Pages:**

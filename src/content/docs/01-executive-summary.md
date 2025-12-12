@@ -9,7 +9,7 @@ description: "Complete marketing takeover proposal for BNC Builders Inc."
 
 **Prepared for:** BNC Builders Inc.
 **Prepared by:** Comcreate
-**Date:** December 2024
+**Date:** December 2025
 
 ---
 
