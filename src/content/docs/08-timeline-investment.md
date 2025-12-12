@@ -509,52 +509,6 @@ All payments are processed securely through our client portal with automatic bil
 
 ---
 
-## Expected Results
-
-### Conservative Projections
-
-| Timeframe | Organic Traffic | Paid Leads | Total Leads |
-|-----------|-----------------|------------|-------------|
-| Month 1 | 120 | 50 | 55-60 |
-| Month 3 | 200 | 100 | 115-125 |
-| Month 6 | 400 | 120 | 145-160 |
-| Month 12 | 700+ | 130 | 175-200 |
-
-### ROI Calculation
-
-**Assumptions:**
-- Average project value: $35,000
-- Close rate: 20%
-- Monthly leads (Month 6): 150
-
-**Monthly Revenue Potential:**
-- 150 leads × 20% close rate = 30 projects
-- 30 projects × $35,000 = **$1,050,000/month**
-
-**Monthly Investment:**
-
-| Category | Amount |
-|----------|--------|
-| Fixed Services | $4,500 |
-| Ad Management (12.5%) | $1,287.50 |
-| Ad Spend | $10,300 |
-| **Total Investment** | **$16,087.50** |
-
-**Return Analysis:**
-
-| Metric | Value |
-|--------|-------|
-| Monthly Revenue Potential | $1,050,000 |
-| Monthly Investment | $16,087.50 |
-| **ROI** | **65:1** |
-| Cost Per Lead | ~$107 |
-| Cost Per Closed Project | ~$536 |
-| Marketing as % of Revenue | 1.5% |
-
-*Industry benchmark for marketing spend: 5-10% of revenue. These projections assume consistent lead flow and sales execution. Actual results vary based on market conditions, competition, seasonality, and close rates.*
-
----
-
 ## Next Steps
 
 1. **Review this proposal** - Take your time, ask questions
